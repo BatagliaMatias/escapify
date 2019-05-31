@@ -4,14 +4,14 @@ PORT="9093"
 FILE="ms-servicio-tickets.jar"
 CWD=$(cd `dirname $0` && pwd)
 CONF="$CWD/conf"
-LOG="$CWD/ms-tickets-$PORT.log"
+LOG="ms-tickets-$PORT.log"
 JMX="-Dcom.sun.management.jmxremote=true -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=5$PORT -Dcom.sun.management.jmxremote.ssl=false"
 
 PIDDIR="."
 REALDIR=`pwd`
 ME=`basename "$0"|sed "s/\.sh$//g"`
 
-PIDFILE="$REALDIR/$ME.pid"
+PIDFILE="$ME.pid"
 
 
 APP_NAME=`echo "$ME"|sed "s/-[0-9]\{4\}$//g"`
