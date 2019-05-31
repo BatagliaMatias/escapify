@@ -2,90 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922db432-21b2-420d-91b2-02a2e6908b8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo/ar/gob/hcdn/proyectos/common/java-hcdn-common/2.0.0-SNAPSHOT/_remote.repositories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo/ar/gob/hcdn/proyectos/common/java-hcdn-common/2.0.0-SNAPSHOT/java-hcdn-common-2.0.0-SNAPSHOT-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo/ar/gob/hcdn/proyectos/common/java-hcdn-common/2.0.0-SNAPSHOT/java-hcdn-common-2.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo/ar/gob/hcdn/proyectos/common/java-hcdn-common/2.0.0-SNAPSHOT/java-hcdn-common-2.0.0-SNAPSHOT.jar.lastUpdated" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo/ar/gob/hcdn/proyectos/common/java-hcdn-common/2.0.0-SNAPSHOT/java-hcdn-common-2.0.0-SNAPSHOT.pom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo/ar/gob/hcdn/proyectos/common/java-hcdn-common/2.0.0-SNAPSHOT/java-hcdn-common-2.0.0-SNAPSHOT.pom.lastUpdated" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo/ar/gob/hcdn/proyectos/common/java-hcdn-common/2.0.0-SNAPSHOT/maven-metadata-local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo/ar/gob/hcdn/proyectos/common/java-hcdn-common/2.0.0-SNAPSHOT/resolver-status.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo/ar/gob/hcdn/proyectos/common/java-hcdn-common/maven-metadata-local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/changes/changes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/ServicioTicketRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/common/ErrorDeServicioDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/common/HcdnResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/common/Persistible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/config/TicketServiceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/controller/TicketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/AddActivoRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/AplicacionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/TicketDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/exception/OperationNotAllowedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/packaging/assembly.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/angular-cornercouch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/angular-route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/angular-route.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/angular.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/angular.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/ticket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/apt/descripcion.apt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/servicio-tickets-9093.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/ServicioTicketRun.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/common/ErrorDeServicioDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/common/HcdnResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/common/Persistible.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/config/SwaggerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/config/TicketServiceConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/controller/TicketController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/dto/AddActivoRequestDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/dto/AplicacionDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/dto/TicketDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/dto/UserDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/exception/OperationNotAllowedException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/packaging/assembly.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/js/angular-cornercouch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/js/angular-route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/js/angular-route.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/js/angular.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/js/angular.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/public/js/ticket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/escapify-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/servicio-tickets-9093.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/ServicioTicketRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/ServicioTicketRun.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/config/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/controller/TicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/controller/TicketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/gob/hcdn/ticket/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/js/angular-cornercouch.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/js/angular-cornercouch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/js/angular.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/js/angular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/js/ticket.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/js/ticket.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -112,14 +38,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/controller/TicketController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
-              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="31" />
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="86" selection-start-column="86" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../java-servicio-tickets-configuration/src/main/resources/servicio-tickets-9093.sh">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servicio-tickets-9093.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -128,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
-              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -145,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/ServicioTicketRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state>
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -165,18 +114,6 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/common/HcdnResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-293">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -186,6 +123,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="BatagliaMatias" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="escapify" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -203,6 +145,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/ticket.js" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/controller/TicketController.java" />
+        <option value="$PROJECT_DIR$/servicio-tickets-9093.sh" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -266,6 +210,54 @@
               <item name="java-servicio-tickets" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ticket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets-configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets-configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets-configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets-configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -285,7 +277,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-servicio-tickets-configuration/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -297,6 +289,7 @@
       <recent name="C:\Users\matub\Desktop\tickets\java-servicio-tickets\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\matub\Desktop\tickets\java-servicio-tickets" />
       <recent name="C:\Users\matub\Desktop\tickets\java-servicio-tickets\src\main\java" />
       <recent name="C:\Users\matub\Desktop\tickets\java-servicio-tickets\src\main\java\ar\gob\hcdn\ticket" />
       <recent name="C:\Users\matub\Desktop\tickets\java-servicio-tickets\repo\ar\gob\hcdn\base\hcdn-microservices-base" />
@@ -345,15 +338,45 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559276924188</updated>
-      <workItem from="1559276931804" duration="4324000" />
+      <workItem from="1559276931804" duration="6155000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <created>1559281402542</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559281402543</updated>
+    </task>
+    <task id="LOCAL-00002" summary="inicio">
+      <created>1559282605612</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559282605612</updated>
+    </task>
+    <task id="LOCAL-00003" summary="inicio">
+      <created>1559282768423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559282768423</updated>
+    </task>
+    <task id="LOCAL-00004" summary="inicio">
+      <created>1559282994590</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559282994590</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4324000" />
+    <option name="totallyTimeSpent" value="6155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -363,18 +386,18 @@
       <window_info id="Web" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Application Servers" sideWeight="0.49932885" weight="0.3297587" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" weight="0.3297587" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Java Enterprise" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" sideWeight="0.49932885" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -394,10 +417,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="inicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="inicio" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -480,13 +514,6 @@
     <entry file="file://$PROJECT_DIR$/../java-servicio-tickets-configuration/src/main/resources/desa/context.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/ServicioTicketRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -514,17 +541,41 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/controller/TicketController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="31" />
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../java-servicio-tickets-configuration/src/main/resources/servicio-tickets-9093.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servicio-tickets-9093.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/ServicioTicketRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="86" selection-start-column="86" selection-end-column="86" />
         </state>
       </provider>
     </entry>
