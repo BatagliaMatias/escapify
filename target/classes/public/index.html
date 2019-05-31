@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="ticket">
+<head>
+<script src="js/angular.js"></script>
+<script src="js/ticket.js"></script>
+
+<title>Carga Activos en Ticket</title>
+
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div ng-controller="CargaTickets">
+    <div>Bienvenido al sistema de carga de tickets {{user.nombre}}</div>
+	<div ng-show="ok.show" class="box ok-message">
+			<label>{{ok.message}}</label>
+		</div>
+		<div ng-show="error.show" class="box error-message">
+			<label>{{error.message}}</label>
+		</div>
+		<div class="box" title="Seleccion Ticket Asignado">
+			<label> Seleccione nro de ticket </label>
+			<select class="form-control" ng-model="idTicket.selected"
+				ng-disabled="NotSelected" ng-change="cargarActivoEnTicket()">
+				<option value="None">None</option>
+				<option ng-repeat="t in tickets" value="{{t.id}}">{{t.descripcion}}</option>
+			</select>
+		</div>
+		<div ng-show="inputcode.show" class="box" title="Carga Activo">
+			<label>Ticket seleccionado [{{idTicket.selected}}]</label><br/>
+			<label>Ingrese Activo:</label>&nbsp;<input text size="9" maxlength="9" ng-model="activoNro"> 
+			<button ng-click="cargarActivo()" ng-disabled="checkCodigoActivo()">Cargar</button>
+		</div>
+	</div>
+
+
+	<hr>
+
+	<ul>
+		<li><%=1 + 1%></li>
+	</ul>
+	
+</body>
+</html>

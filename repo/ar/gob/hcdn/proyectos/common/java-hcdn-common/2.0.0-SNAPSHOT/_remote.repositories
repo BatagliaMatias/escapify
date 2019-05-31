@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu May 30 18:44:53 GMT-03:00 2019
+java-hcdn-common-2.0.0-SNAPSHOT.jar>=
+java-hcdn-common-2.0.0-SNAPSHOT.pom>=
+java-hcdn-common-2.0.0-SNAPSHOT-sources.jar>=

@@ -1,0 +1,13 @@
+<document>
+  <properties>
+    <title>Historial de cambios en java-servicio-liquidaciones</title>
+    <author email="santiagococo@gmail.com">Gaston Coco</author>
+  </properties>
+  <body>
+  <release version="1.0.0" date="2019-09-18" description="Primera version de servicio">
+      <action dev="santiagococo" type="add" due-to="Ivan Puente" due-to-email="ipuentem@hcdn.gob.ar">
+		Se desarrolla la primer version del servicio de liquidaciones.
+      </action>
+   </release>
+  </body>
+</document>
