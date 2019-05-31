@@ -1,1 +1,1 @@
-web: java -jar target/escapify-1.0.0-SNAPSHOT.jar
+web: java -cp target/escapify-1.0.0-SNAPSHOT.jar ar.gob.hcdn.ticket.ServicioTicketRun
