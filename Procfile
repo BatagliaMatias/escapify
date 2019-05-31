@@ -1,1 +1,1 @@
-web: java -jar target/escapify-1.0.0-SNAPSHOT.jar
+web: ./servicio-tickets-9093.sh
