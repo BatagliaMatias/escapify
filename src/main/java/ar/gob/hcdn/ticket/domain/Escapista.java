@@ -1,14 +1,20 @@
 package ar.gob.hcdn.ticket.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="Escapista")
 public class Escapista {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="dbId")
+    private Long pk;
     private String nombre;
     private String apellido;
     private String usuario;
+
+    public Escapista() {
+    }
 
     public String getNombre() {
         return nombre;
@@ -32,5 +38,13 @@ public class Escapista {
 
     public void setUsuario(String usuario) {
         this.usuario = usuario;
+    }
+
+    public Long getPk() {
+        return pk;
+    }
+
+    public void setPk(Long pk) {
+        this.pk = pk;
     }
 }
