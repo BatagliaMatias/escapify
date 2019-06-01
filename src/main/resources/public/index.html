@@ -48,7 +48,7 @@
 			<select class="form-control" ng-model="idEscapista.selected"
 					ng-disabled="NotSelected" ng-change="cargarDatosEscapista()">
 				<option value="None">None</option>
-				<option ng-repeat="e in escapistas" value="{{e.id}}">{{t.nombre}}</option>
+				<option ng-repeat="e in escapistas" value="{{e.id}}">{{e.nombre}} - {{e.usuario}}</option>
 			</select>
 		</div>
 
