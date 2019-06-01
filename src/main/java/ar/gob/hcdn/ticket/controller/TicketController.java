@@ -57,6 +57,13 @@ public class TicketController {
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
+	@GetMapping("escapista/{userID}")
+	public ResponseEntity<HcdnResponse<EscapistaDTO>> getEscapista(@PathVariable("userID") Long userID){
+		HcdnResponse<EscapistaDTO> response = new HcdnResponse<>();
+		response.setData(escapifyService.getEscapista(userID));
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+
 
 
 

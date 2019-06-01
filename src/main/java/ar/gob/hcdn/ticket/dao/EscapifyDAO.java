@@ -108,4 +108,6 @@ public class EscapifyDAO {
     public List<Escapista> getEscapistas() {
         return persistenceService.createQuery("from Escapista e", Escapista.class).getResultList();
     }
+
+
 }

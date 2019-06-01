@@ -31,7 +31,7 @@
 		<div ng-cloak>
 			<md-content>
 				<md-tabs md-dynamic-height class="md-primary" md-center-tabs>
-					<md-tab label="one">
+					<md-tab label="Usuario">
 						<md-content class="md-padding">
 
 
@@ -61,12 +61,16 @@
 
 								<div>
 									<h1>Selecci&oacute;n de usuario</h1>
-									<select class="form-control" ng-model="idEscapista.selected"
+									Elija su usuario: <select class="form-control" ng-model="idEscapista.selected"
 											ng-disabled="NotSelected" ng-change="cargarDatosEscapista()">
 										<option value="None">None</option>
 										<option ng-repeat="e in escapistas" value="{{e.id}}">{{e.nombre}} - {{e.usuario}}</option>
 									</select>
 								</div>
+
+								<ul>
+
+								</ul>
 						</md-content>
 					</md-tab>
 

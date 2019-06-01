@@ -29,4 +29,8 @@ public class EscapifyService {
         }
         return dtoList;
     }
+
+    public EscapistaDTO getEscapista(Long userID) {
+        return escapistaTransformer.transformDetallado(escapifyDAO.findEscapistaById(userID));
+    }
 }
