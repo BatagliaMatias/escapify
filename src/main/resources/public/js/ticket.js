@@ -11,6 +11,7 @@ angular
 						selected : "None"
 					};
 					$scope.escapistas = [];
+					$scope.escapista = {};
 					$scope.tickets = [];
 					$scope.error = {
 						show : false,
@@ -34,7 +35,6 @@ angular
 					//	obtenerUsuario();
 					}
 
-					cargarEscapistas();
 
 					$scope.cargarActivoEnTicket = function() {
 						if ($scope.idTicket.selected != "None") {
@@ -89,7 +89,7 @@ angular
 						console.log("A")
 					};
 
-					function cargarEscapistas() {
+					$scope.cargarEscapistas = function() {
 						console.log('/services/escapistas');
 						$http(
 							{
@@ -112,7 +112,7 @@ angular
 									$scope.error.show = true;
 									$scope.error.message = "Se produjo un error obteniendo los escapistas";
 							});
-					}
+					};
 					function obtenerTickets() {
 						$http({
 									method : 'GET',
