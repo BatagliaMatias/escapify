@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="922db432-21b2-420d-91b2-02a2e6908b8d" name="Default Changelist" comment="" />
+    <list default="true" id="922db432-21b2-420d-91b2-02a2e6908b8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../java-hcdn-common/target/" />
@@ -21,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
-              <caret line="37" column="101" selection-start-line="37" selection-start-column="101" selection-end-line="37" selection-end-column="101" />
+              <caret line="37" column="133" selection-start-line="37" selection-start-column="133" selection-end-line="37" selection-end-column="133" />
               <folding>
                 <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -32,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/ticket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+            <state relative-caret-position="443">
+              <caret line="108" column="65" selection-start-line="108" selection-start-column="65" selection-end-line="108" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -46,6 +48,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>A</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -341,7 +348,7 @@
       <updated>1559276924188</updated>
       <workItem from="1559276931804" duration="7852000" />
       <workItem from="1559359840376" duration="15770000" />
-      <workItem from="1559419410628" duration="1775000" />
+      <workItem from="1559419410628" duration="2061000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1559281402542</created>
@@ -609,11 +616,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559420978459</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="frontend escapista">
+      <created>1559421426360</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1559421426360</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25397000" />
+    <option name="totallyTimeSpent" value="25683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -961,15 +975,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/ticket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+        <state relative-caret-position="443">
+          <caret line="108" column="65" selection-start-line="108" selection-start-column="65" selection-end-line="108" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="37" column="101" selection-start-line="37" selection-start-column="101" selection-end-line="37" selection-end-column="101" />
+          <caret line="37" column="133" selection-start-line="37" selection-start-column="133" selection-end-line="37" selection-end-column="133" />
           <folding>
             <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

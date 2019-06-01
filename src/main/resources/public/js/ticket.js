@@ -100,7 +100,7 @@ angular
 								function(response, status, headers,
 										 config) {
 
-									$scope.escapista = [];
+									$scope.escapista.length = 0;
 									angular.forEach(response.data.data,
 										function(row) {
 											$scope.escapistas
