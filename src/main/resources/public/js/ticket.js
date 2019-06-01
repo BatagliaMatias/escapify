@@ -12,6 +12,7 @@ angular
 					};
 					$scope.escapistas = [];
 					$scope.escapista = {};
+					$scope.escapistaDetalle = {};
 					$scope.tickets = [];
 					$scope.error = {
 						show : false,
@@ -96,10 +97,9 @@ angular
 								.then(
 									function(response, status, headers,
 											 config) {
-										console.log($scope.escapista);
-										$scope.escapista = response.data.data;
-										console.log(response.data.data);
-										console.log($scope.escapista)
+
+										$scope.escapistaDetalle = response.data.data;
+										console.log($scope.escapistaDetalle)
 
 									},function(response, status, headers,
 											   config) {
@@ -111,8 +111,8 @@ angular
 
 					$scope.escapistasCargados = false;
 					$scope.cargarEscapistas = function() {
-						console.log('/services/escapistas');
 						if(!$scope.escapistasCargados){
+							console.log('/services/escapistas');
 							$http(
 								{
 									method : 'GET',
