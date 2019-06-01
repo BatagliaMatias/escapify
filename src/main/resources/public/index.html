@@ -40,6 +40,10 @@
 								</md-select>
 								<p class="md-caption">You have assigned the task to: {{ escapistaDetalle ? escapistaDetalle.nombre + escapistaDetalle.usuario + escapistaDetalle.preferencia.terror : 'No one yet' }}</p>
 
+								<div ng-show="isEscapeDetalle.show" class="box" title="Detalle Escapista">
+									Usuario: {{escapistaDetalle.usuario}}
+									Nombre: {{escapistaDetalle.nombre}}
+								</div>
 
 
 

@@ -13,6 +13,10 @@ angular
 					$scope.escapistas = [];
 					$scope.escapista = {};
 					$scope.escapistaDetalle = {};
+					$scope.isEscapistaDetalle = {
+						show : false
+					};
+
 					$scope.tickets = [];
 					$scope.error = {
 						show : false,
@@ -99,6 +103,7 @@ angular
 											 config) {
 
 										$scope.escapistaDetalle = response.data.data;
+										$scope.isEscapistaDetalle.show = true;
 										console.log($scope.escapistaDetalle)
 
 									},function(response, status, headers,
