@@ -109,31 +109,34 @@ angular
 						}
 					};
 
+					$scope.escapistasCargados = false;
 					$scope.cargarEscapistas = function() {
 						console.log('/services/escapistas');
-						$http(
-							{
-								method : 'GET',
-								url : '/services/escapistas',
-							})
-							.then(
-								function(response, status, headers,
-										 config) {
-									console.log($scope.escapistas);
-									console.log(response.data.data);
-									/**angular.forEach(response.data.data,
-										function(row) {
-											$scope.escapistas
-												.push(row);
-										});*/
-									$scope.escapistas = response.data.data;
-									console.log($scope.escapistas);
+						if(!$scope.escapistasCargados){
+							$http(
+								{
+									method : 'GET',
+									url : '/services/escapistas',
+								})
+								.then(
+									function(response, status, headers,
+											 config) {
 
-								},function(response, status, headers,
-										 config) {
-									$scope.error.show = true;
-									$scope.error.message = "Se produjo un error obteniendo los escapistas";
-							});
+										angular.forEach(response.data.data,
+											function(row) {
+												$scope.escapistas
+													.push(row);
+											});
+										console.log($scope.escapistas);
+										$scope.escapistasCargados = true;
+
+									},function(response, status, headers,
+											   config) {
+										$scope.error.show = true;
+										$scope.error.message = "Se produjo un error obteniendo los escapistas";
+									});
+						}
+
 					};
 					function obtenerTickets() {
 						$http({
