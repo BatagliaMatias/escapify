@@ -1,4 +1,14 @@
 /* Empty. Add your own CSS if you like */
+.tabsdemoCenterTabs {
+  /*
+ * Style tab width to align with the MD spec:
+ * https://material.io/archive/guidelines/components/tabs.html#tabs-specs
+ */ }
+.tabsdemoCenterTabs md-tab-item {
+  min-width: 72px; }
+@media (min-width: 960px) {
+  .tabsdemoCenterTabs md-tab-item {
+    min-width: 160px; } }
 
 .title-image {
   margin-top: 8px;

@@ -1,5 +1,5 @@
 angular
-		.module('ticket', [])
+		.module('ticket', ['ngMaterial', 'ngMessages'])
 		.controller(
 				'CargaTickets',
 				function($scope, $http) {
