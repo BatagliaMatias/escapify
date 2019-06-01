@@ -119,8 +119,8 @@ angular
 							.then(
 								function(response, status, headers,
 										 config) {
-
-									$scope.escapista.length = 0;
+									console.log($scope.escapistas);
+									$scope.escapistas = $filter('filter')($scope.escapistas, {nombre: 'borraTodo'});
 									angular.forEach(response.data.data,
 										function(row) {
 											$scope.escapistas
