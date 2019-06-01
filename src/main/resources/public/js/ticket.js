@@ -99,13 +99,14 @@ angular
 							.then(
 								function(response, status, headers,
 										 config) {
-									console.log(response.data.data);
+
+									$scope.escapista = [];
 									angular.forEach(response.data.data,
 										function(row) {
 											$scope.escapistas
 												.push(row);
 										});
-
+									console.log($scope.escapistas);
 
 								},function(response, status, headers,
 										 config) {

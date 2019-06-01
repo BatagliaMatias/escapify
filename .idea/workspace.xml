@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="922db432-21b2-420d-91b2-02a2e6908b8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="922db432-21b2-420d-91b2-02a2e6908b8d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../java-hcdn-common/target/" />
@@ -344,7 +341,7 @@
       <updated>1559276924188</updated>
       <workItem from="1559276931804" duration="7852000" />
       <workItem from="1559359840376" duration="15770000" />
-      <workItem from="1559419410628" duration="1483000" />
+      <workItem from="1559419410628" duration="1775000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1559281402542</created>
@@ -605,11 +602,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559420652890</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="frontend escapista">
+      <created>1559420978459</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1559420978459</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25105000" />
+    <option name="totallyTimeSpent" value="25397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
