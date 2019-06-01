@@ -40,7 +40,7 @@ angular
 					//	obtenerUsuario();
 					}
 
-					$scope.salasParaEquipo = function(idEquipo){
+					$scope.salasParaEquipo =  function(idEquipo){
 						alert("Equipo " + idEquipo);
 					};
 
