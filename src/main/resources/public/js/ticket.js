@@ -86,7 +86,27 @@ angular
 					};
 
 					$scope.cargarDatosEscapista = function() {
-						console.log($scope.escapista.id)
+						console.log("/services/escapista/" + $scope.escapista.id);
+						if($scope.escapista.id != null){
+							$http(
+								{
+									method : 'GET',
+									url : '/services/escapista/' + $scope.escapista.id,
+								})
+								.then(
+									function(response, status, headers,
+											 config) {
+										console.log($scope.escapista);
+										$scope.escapista = response.data.data;
+										console.log(response.data.data);
+										console.log($scope.escapista)
+
+									},function(response, status, headers,
+											   config) {
+										$scope.error.show = true;
+										$scope.error.message = "Se produjo un error obteniendo datos del escapista";
+									});
+						}
 					};
 
 					$scope.cargarEscapistas = function() {

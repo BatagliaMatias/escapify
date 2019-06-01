@@ -35,7 +35,7 @@
 						<md-content class="md-padding">
 							<h2 class="md-display-1">Escapista</h2>
 							Elija su escapista:
-								<md-select placeholder="Escapista" ng-change="cargarDatosEscapista()" ng-model="escapista" md-on-open="cargarEscapistas()" style="min-width: 200px;">
+								<md-select placeholder="Escapista" ng-change="cargarDatosEscapista()" ng-model="escapista" md-on-load="cargarEscapistas()" style="min-width: 200px;">
 									<md-option ng-value="escapista"  ng-repeat="escapista in escapistas">{{escapista.nombre}}</md-option>
 								</md-select>
 								<p class="md-caption">You have assigned the task to: {{ escapista ? escapista.nombre + escapista.usuario : 'No one yet' }}</p>
