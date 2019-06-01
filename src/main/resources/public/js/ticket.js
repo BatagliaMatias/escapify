@@ -99,8 +99,8 @@ angular
 							.then(
 								function(response, status, headers,
 										 config) {
-									console.log(response.data);
-									angular.forEach(response.data,
+									console.log(response.data.data);
+									angular.forEach(response.data.data,
 										function(row) {
 											$scope.escapistas
 												.push(row);
