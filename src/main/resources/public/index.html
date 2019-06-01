@@ -34,7 +34,7 @@
 					<md-tab label="Escapistas">
 						<md-content class="md-padding">
 
-                                <md-content style="margin: 16px; padding:16px">
+                                <md-content  ng-show="!isEscapistaDetalle.show" style="margin: 16px; padding:16px">
                                     <h2 class="md-display-1">Elija su escapista</h2>
                                     <md-select placeholder="" ng-change="cargarDatosEscapista()" ng-model="escapista" md-on-open="cargarEscapistas()" style="min-width: 200px;">
                                         <md-option ng-value="escapista"  ng-repeat="escapista in escapistas">{{escapista.nombre}}</md-option>
@@ -107,21 +107,23 @@
 
 					<md-tab label="Equipos" ng-disabled="!isEscapistaDetalle.show">
 						<md-content class="md-padding">
-							<h2 class="md-display-1">Equipos</h2>
-                            <md-content>
-                                <md-list flex>
-                                    <md-list-item class="md-2-line" ng-repeat="equipoEscapista in escapistaDetalle.equipo">
-                                        <div class="md-list-item-text">
-                                            <h3> Nombre: {{ salaJugada.nombre }} </h3>
-                                            <h3> Integrantes: {{ salaJugada.nombre }} </h3>
-                                            <md-list flex>
-                                                <md-list-item class="md-1-line" ng-repeat="integrante in equipoEscapista.integrantes">
-                                                    <h4>{{integrante}}</h4>
-                                                </md-list-item>
-                                            </md-list>
-                                        </div>
-                                    </md-list-item>
-                                </md-list>
+                            <md-content style="margin: 16px; padding:16px">
+                                <h2 class="md-display-1">Equipos</h2>
+                                <md-content>
+                                    <md-list flex>
+                                        <md-list-item class="md-2-line" ng-repeat="equipoEscapista in escapistaDetalle.equipos">
+                                            <div class="md-list-item-text">
+                                                <h3> Nombre: {{ salaJugada.nombre }} </h3>
+                                                <h3> Integrantes: {{ salaJugada.nombre }} </h3>
+                                                <md-list flex>
+                                                    <md-list-item class="md-1-line" ng-repeat="integrante in equipoEscapista.integrantes">
+                                                        <h4>{{integrante}}</h4>
+                                                    </md-list-item>
+                                                </md-list>
+                                            </div>
+                                        </md-list-item>
+                                    </md-list>
+                                </md-content>
                             </md-content>
 						</md-content>
 					</md-tab>
