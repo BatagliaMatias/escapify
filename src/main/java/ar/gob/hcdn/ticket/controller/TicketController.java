@@ -1,6 +1,7 @@
 package ar.gob.hcdn.ticket.controller;
 
 import ar.gob.hcdn.ticket.common.HcdnResponse;
+import ar.gob.hcdn.ticket.dto.EscapistaDTO;
 import ar.gob.hcdn.ticket.dto.UserDTO;
 import ar.gob.hcdn.ticket.service.EscapifyService;
 import io.swagger.annotations.Api;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.List;
 import java.util.logging.Logger;
 
 @Controller
@@ -45,6 +47,13 @@ public class TicketController {
 	public ResponseEntity<HcdnResponse<String>> poblar(){
 		HcdnResponse<String> response = new HcdnResponse<>();
 		response.setData(escapifyService.poblar());
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+
+	@GetMapping("escapistas")
+	public ResponseEntity<HcdnResponse<List<EscapistaDTO>>> getEscapistas(){
+		HcdnResponse<List<EscapistaDTO>> response = new HcdnResponse<>();
+		response.setData(escapifyService.getEscapistas());
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 

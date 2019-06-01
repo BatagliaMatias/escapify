@@ -29,6 +29,8 @@ angular
 						obtenerUsuario();
 					}
 
+					cargarEscapistas();
+
 					$scope.cargarActivoEnTicket = function() {
 						if ($scope.idTicket.selected != "None") {
 							$scope.inputcode.show = true;
@@ -78,6 +80,26 @@ angular
 					$scope.checkCodigoActivo = function() {
 						return $scope.activoNro.trim().length != 9;
 					};
+
+					function cargarEscapistas() {
+						console.log('/services/escapistas');
+						$http(
+							{
+								method : 'GET',
+								url : '/services/escapistas',
+							})
+							.success(
+								function(response, status, headers,
+										 config) {
+									$scope.escapistas = response.data;
+								})
+							.error(
+								function(response, status, headers,
+										 config) {
+									$scope.error.show = true;
+									$scope.error.message = "Se produjo un error obteniendo los escapistas";
+								});
+					}
 
 					function obtenerUsuario() {
 						console.log('http://srv-apache-desa.hcdn.gob.ar:9093/services/users/'
