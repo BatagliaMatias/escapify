@@ -113,10 +113,10 @@
                                     <md-list flex>
                                         <md-list-item class="md-2-line" ng-repeat="equipoEscapista in escapistaDetalle.equipos">
                                             <div class="md-list-item-text">
-                                                <h3> Nombre: {{ salaJugada.nombre }} </h3>
-                                                <h3> Integrantes: {{ salaJugada.nombre }} </h3>
+                                                <h3> Nombre: {{ equipoEscapista.nombre }} </h3>
+                                                <h3> Integrantes: </h3>
                                                 <md-list flex>
-                                                    <md-list-item class="md-1-line" ng-repeat="integrante in equipoEscapista.integrantes">
+                                                    <md-list-item  ng-repeat="integrante in equipoEscapista.integrantes">
                                                         <h4>{{integrante}}</h4>
                                                     </md-list-item>
                                                 </md-list>
