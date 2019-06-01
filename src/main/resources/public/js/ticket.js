@@ -120,7 +120,7 @@ angular
 								function(response, status, headers,
 										 config) {
 									console.log($scope.escapistas);
-									$scope.escapistas = $filter('filter')($scope.escapistas, {nombre: 'borraTodo'});
+									console.log(response.data.data);
 									angular.forEach(response.data.data,
 										function(row) {
 											$scope.escapistas
