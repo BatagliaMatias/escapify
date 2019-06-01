@@ -6,6 +6,7 @@ angular
 					$scope.idTicket = {
 						selected : "None"
 					};
+					$scope.escapistas = [];
 					$scope.tickets = [];
 					$scope.error = {
 						show : false,
@@ -91,13 +92,14 @@ angular
 							.success(
 								function(response, status, headers,
 										 config) {
+									console.log(response.data);
 									angular.forEach(response.data,
 										function(row) {
 											$scope.escapistas
 												.push(row);
 										});
 
-									console.log(response.data)
+
 								})
 							.error(
 								function(response, status, headers,
