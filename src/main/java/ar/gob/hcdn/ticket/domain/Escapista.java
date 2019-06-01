@@ -15,13 +15,12 @@ public class Escapista {
     private String usuario;
     @OneToOne(cascade = CascadeType.PERSIST)
     private Preferencia preferencia = new Preferencia();
-    @OneToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Sala> salas = new ArrayList<>();
     @ManyToMany(cascade = {
                     CascadeType.PERSIST,
                     CascadeType.MERGE
-            },
-            mappedBy = "escapistas")
+            })
     private List<Equipo> equipos = new ArrayList<>();
 
     public Escapista() {

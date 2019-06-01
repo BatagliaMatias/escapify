@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922db432-21b2-420d-91b2-02a2e6908b8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/EquipoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/PreferenciaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/SalaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/controller/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dao/EscapifyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dao/EscapifyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/EscapistaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/EscapistaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/service/EscapifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/service/EscapifyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/transformer/EscapistaTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/transformer/EscapistaTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Equipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Escapista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Escapista.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,22 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/controller/TicketController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/EscapistaDTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#147#148#0" expanded="true" />
@@ -76,32 +58,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/SalaDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-              <folding>
-                <element signature="e#175#176#0" expanded="true" />
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/PreferenciaDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-68">
               <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
               <folding>
                 <element signature="e#169#170#0" expanded="true" />
@@ -171,31 +130,62 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+              <folding>
+                <element signature="e#1690#1698#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dao/EscapifyDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="297">
+              <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
-                <element signature="e#1386#1387#0" expanded="true" />
-                <element signature="e#1554#1555#0" expanded="true" />
-                <element signature="e#1621#1622#0" expanded="true" />
-                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Escapista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+            <state relative-caret-position="323">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
               <folding>
-                <element signature="e#1690#1698#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#823#824#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Equipo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#986#987#0" expanded="true" />
+                <element signature="e#1013#1014#0" expanded="true" />
+                <element signature="e#1038#1039#0" expanded="true" />
+                <element signature="e#1072#1073#0" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -246,16 +236,13 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/ServicioTicketRun.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/config/MyExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Equipo.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/service/ServiceEscapify.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Sala.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Escapista.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Preferencia.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/public/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/ticket.js" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dao/EscapifyDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/service/EscapifyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/EquipoDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/SalaDTO.java" />
@@ -264,6 +251,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/EscapistaDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/transformer/EscapistaTransformer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dao/EscapifyDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Equipo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Escapista.java" />
       </list>
     </option>
   </component>
@@ -350,7 +340,34 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ticket" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ticket" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ticket" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-servicio-tickets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ticket" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="escapify" type="b2602c69:ProjectViewProjectNode" />
@@ -467,7 +484,7 @@
       <option name="presentableId" value="Default" />
       <updated>1559276924188</updated>
       <workItem from="1559276931804" duration="7852000" />
-      <workItem from="1559359840376" duration="11984000" />
+      <workItem from="1559359840376" duration="13852000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1559281402542</created>
@@ -672,15 +689,28 @@
       <option name="project" value="LOCAL" />
       <updated>1559370494936</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="detalle escapista">
+      <created>1559372007108</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1559372007108</updated>
+    </task>
+    <task id="LOCAL-00031" summary="detalle escapista">
+      <created>1559372428625</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1559372428625</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19836000" />
+    <option name="totallyTimeSpent" value="21704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -741,7 +771,8 @@
     <MESSAGE value="poblar" />
     <MESSAGE value="escapistas" />
     <MESSAGE value="material" />
-    <option name="LAST_COMMIT_MESSAGE" value="material" />
+    <MESSAGE value="detalle escapista" />
+    <option name="LAST_COMMIT_MESSAGE" value="detalle escapista" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -847,54 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Escapista.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1450#1451#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-            <element signature="e#1589#1590#0" expanded="true" />
-            <element signature="e#1721#1722#0" expanded="true" />
-            <element signature="e#1749#1750#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Equipo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Preferencia.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -934,44 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dao/EscapifyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1621#1622#0" expanded="true" />
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/PreferenciaDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,7 +966,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/EscapistaDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#147#148#0" expanded="true" />
@@ -1052,6 +997,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/transformer/EscapistaTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/ticket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/PreferenciaDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="e#1690#1698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dao/EscapifyDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dto/EquipoDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1073,29 +1076,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/transformer/EscapistaTransformer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Equipo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+        <state relative-caret-position="187">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/ticket.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/domain/Escapista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+        <state relative-caret-position="323">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding>
-            <element signature="e#1690#1698#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
           </folding>
         </state>
       </provider>
