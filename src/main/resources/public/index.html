@@ -33,38 +33,40 @@
 				<md-tabs md-dynamic-height class="md-primary" md-center-tabs>
 					<md-tab label="Escapistas">
 						<md-content class="md-padding">
-							<h2 class="md-display-1">Escapista</h2>
-							Elija su escapista:
+							<h2 class="md-display-1">Elija su escapista</h2>
+
 								<md-select placeholder="" ng-change="cargarDatosEscapista()" ng-model="escapista" md-on-open="cargarEscapistas()" style="min-width: 200px;">
 									<md-option ng-value="escapista"  ng-repeat="escapista in escapistas">{{escapista.nombre}}</md-option>
 								</md-select>
-								<p class="md-caption">You have assigned the task to: {{ escapistaDetalle ? escapistaDetalle.nombre + escapistaDetalle.usuario + escapistaDetalle.preferencia.terror : 'No one yet' }}</p>
 
 								<div ng-show="isEscapistaDetalle.show"  title="Detalle Escapista">
-									<h3>Usuario: {{escapistaDetalle.usuario}}</h3>
-									<h3>Nombre: {{escapistaDetalle.nombre}}</h3>
-									<h3>Preferencias</h3>
-									<div layout>
-										<div flex="10" layout layout-align="center center">
-											<span class="md-body-1">Terror</span>
-										</div>
-										<md-slider flex  ng-model="escapistaDetalle.preferencia.terror" min="0" max="10" ng-disabled="true" step="" md-discrete
-											   aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
-									</div>
-									<div layout>
-										<div flex="10" layout layout-align="center center">
-											<span class="md-body-1">Aventura</span>
-										</div>
-										<md-slider flex  ng-model="escapistaDetalle.preferencia.aventura" min="0" max="10" ng-disabled="true" step="" md-discrete
-												   aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
-									</div>
-									<div layout>
-										<div flex="10" layout layout-align="center center">
-											<span class="md-body-1">Dificultad</span>
-										</div>
-										<md-slider flex  ng-model="escapistaDetalle.preferencia.dificultad" min="0" max="10" ng-disabled="true" step="" md-discrete
-												   aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
-									</div>
+                                    <h2 class="md-display-1">Escapista</h2>
+                                    <md-content style="margin: 16px; padding:16px">
+                                        <h3>Usuario: {{escapistaDetalle.usuario}}</h3>
+                                        <h3>Nombre: {{escapistaDetalle.nombre}}</h3>
+                                        <h3>Preferencias</h3>
+                                        <div layout>
+                                            <div flex="10" layout layout-align="center center">
+                                                <span class="md-body-2">Terror</span>
+                                            </div>
+                                            <md-slider flex  ng-model="escapistaDetalle.preferencia.terror" min="0" max="10" ng-disabled="true" step=""
+                                                   aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
+                                        </div>
+                                        <div layout>
+                                            <div flex="10" layout layout-align="center center">
+                                                <span class="md-body-2">Aventura</span>
+                                            </div>
+                                            <md-slider flex  ng-model="escapistaDetalle.preferencia.aventura" min="0" max="10" ng-disabled="true" step=""
+                                                       aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
+                                        </div>
+                                        <div layout>
+                                            <div flex="10" layout layout-align="center center">
+                                                <span class="md-body-2">Dificultad</span>
+                                            </div>
+                                            <md-slider flex  ng-model="escapistaDetalle.preferencia.dificultad" min="0" max="10" ng-disabled="true" step=""
+                                                       aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
+                                        </div>
+                                    </md-content>
 								</div>
 
 
