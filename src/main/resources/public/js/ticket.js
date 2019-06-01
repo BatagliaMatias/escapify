@@ -90,7 +90,7 @@ angular
 						console.log("A")
 					};
 
-					$scope.cargarEscapistas = function() {
+					function cargarEscapistas() {
 						console.log('/services/escapistas');
 						$http(
 							{
@@ -115,9 +115,7 @@ angular
 									$scope.error.show = true;
 									$scope.error.message = "Se produjo un error obteniendo los escapistas";
 								});
-					};
-
-
+					}
 					function obtenerTickets() {
 						$http(
 								{
