@@ -6,6 +6,10 @@ angular
 					$scope.idTicket = {
 						selected : "None"
 					};
+
+					$scope.idEscapista = {
+						selected : "None"
+					};
 					$scope.escapistas = [];
 					$scope.tickets = [];
 					$scope.error = {
@@ -82,7 +86,11 @@ angular
 						return $scope.activoNro.trim().length != 9;
 					};
 
-					function cargarEscapistas() {
+					$scope.cargarDatosEscapista = function() {
+						console.log("A")
+					};
+
+					$scope.cargarEscapistas = function() {
 						console.log('/services/escapistas');
 						$http(
 							{
@@ -107,7 +115,7 @@ angular
 									$scope.error.show = true;
 									$scope.error.message = "Se produjo un error obteniendo los escapistas";
 								});
-					}
+					};
 
 
 					function obtenerTickets() {
