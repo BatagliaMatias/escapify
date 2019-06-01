@@ -121,11 +121,12 @@ angular
 										 config) {
 									console.log($scope.escapistas);
 									console.log(response.data.data);
-									angular.forEach(response.data.data,
+									/**angular.forEach(response.data.data,
 										function(row) {
 											$scope.escapistas
 												.push(row);
-										});
+										});*/
+									$scope.escapistas = response.data.data;
 									console.log($scope.escapistas);
 
 								},function(response, status, headers,
