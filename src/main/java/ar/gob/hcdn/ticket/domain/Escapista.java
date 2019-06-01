@@ -21,6 +21,10 @@ public class Escapista {
                     CascadeType.PERSIST,
                     CascadeType.MERGE
             })
+    @JoinTable(
+            name = "equipos_escapista",
+            joinColumns = @JoinColumn(name = "escapista_id"),
+            inverseJoinColumns = @JoinColumn(name = "equipo_id"))
     private List<Equipo> equipos = new ArrayList<>();
 
     public Escapista() {

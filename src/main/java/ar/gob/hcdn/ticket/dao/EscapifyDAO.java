@@ -54,7 +54,7 @@ public class EscapifyDAO {
         escapista1.agregarEquipo(equipoA);
         escapista1.agregarEquipo(equipoB);
         escapista1.agregarSala(salaTerror);
-        persist(escapista1);
+
 
         Escapista escapista2 = new Escapista();
         escapista2.setNombre("fede terror");
@@ -64,7 +64,7 @@ public class EscapifyDAO {
         escapista2.getPreferencia().setAventura(1);
         escapista2.agregarEquipo(equipoA);
         escapista2.agregarSala(salaTerror);
-        persist(escapista2);
+
 
         Escapista escapista3 = new Escapista();
         escapista3.setNombre("angie aventura");
@@ -74,6 +74,9 @@ public class EscapifyDAO {
         escapista3.getPreferencia().setAventura(10);
         escapista3.agregarEquipo(equipoB);
         escapista3.agregarSala(salaTerrorDificil);
+
+        persist(escapista1);
+        persist(escapista2);
         persist(escapista3);
 
         return "OK";

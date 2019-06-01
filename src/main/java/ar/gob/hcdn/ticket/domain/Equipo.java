@@ -12,10 +12,7 @@ public class Equipo {
     @Column(name="dbId")
     private Long pk;
     private String nombre;
-    @ManyToMany(cascade = {
-                    CascadeType.PERSIST,
-                    CascadeType.MERGE
-            })
+    @ManyToMany(cascade =  CascadeType.PERSIST, mappedBy = "equipos")
     private List<Escapista> escapistas = new ArrayList<>();
 
     public List<Escapista> getEscapistas() {
