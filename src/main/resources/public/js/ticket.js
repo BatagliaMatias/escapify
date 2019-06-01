@@ -40,6 +40,9 @@ angular
 					//	obtenerUsuario();
 					}
 
+					$scope.salasParaEquipo = function(idEquipo){
+						alert("Equipo " + idEquipo);
+					};
 
 					$scope.cargarActivoEnTicket = function() {
 						if ($scope.idTicket.selected != "None") {

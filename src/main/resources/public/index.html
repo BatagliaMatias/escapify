@@ -110,18 +110,18 @@
 						<md-content class="md-padding">
                                 <h2 class="md-display-1">Equipos</h2>
                                 <md-content>
-                                    <ul flex>
+                                    <md-list flex>
                                         <md-list-item class="md-2-line" ng-repeat="equipoEscapista in escapistaDetalle.equipos">
                                             <div class="md-list-item-text">
                                                 <h3> Nombre: {{ equipoEscapista.nombre }} </h3>
                                                 <h3> Integrantes: </h3>
                                                 <ul>
-                                                    <li ng-repeat="integrante in equipoEscapista.integrantes">
+                                                    <li  ng-repeat="integrante in equipoEscapista.integrantes">
                                                        {{integrante}}
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <md-button class="md-secondary">Buscar Sala</md-button>
+                                            <md-button ng-click="salasParaEquipo(equipoEscapista.id)" class="md-primary">Buscar Sala</md-button>
                                             <md-divider ng-if="!$last"></md-divider>
                                         </md-list-item>
                                     </md-list>
