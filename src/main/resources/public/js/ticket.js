@@ -91,7 +91,13 @@ angular
 							.success(
 								function(response, status, headers,
 										 config) {
-									$scope.escapistas = response.data;
+									angular.forEach(response.data,
+										function(row) {
+											$scope.escapistas
+												.push(row);
+										});
+
+									console.log(response.data)
 								})
 							.error(
 								function(response, status, headers,
@@ -101,30 +107,6 @@ angular
 								});
 					}
 
-					function obtenerUsuario() {
-						console.log('http://srv-apache-desa.hcdn.gob.ar:9093/services/users/'
-								+ $scope.username);
-						$http(
-								{
-									method : 'GET',
-									url : '/services/users/1'
-											+ $scope.username,
-								})
-								.success(
-										function(response, status, headers,
-												config) {
-											$scope.user.id = response.data.userID;
-											$scope.user.nombre = response.data.nombre;
-											obtenerTickets();
-										})
-								.error(
-										function(response, status, headers,
-												config) {
-											$scope.error.show = true;
-											$scope.error.message = "Se produjo un error obteniendo los datos de usuario";
-										});
-
-					}
 
 					function obtenerTickets() {
 						$http(

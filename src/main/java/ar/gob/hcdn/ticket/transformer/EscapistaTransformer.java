@@ -10,6 +10,7 @@ public class EscapistaTransformer {
         EscapistaDTO escapistaDTO = new EscapistaDTO();
         escapistaDTO.setNombre(escapista.getNombre());
         escapistaDTO.setUsuario(escapista.getUsuario());
+        escapistaDTO.setId(escapista.getPk());
         return escapistaDTO;
     }
 }
