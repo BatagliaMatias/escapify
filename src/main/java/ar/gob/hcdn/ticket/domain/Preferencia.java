@@ -3,7 +3,7 @@ package ar.gob.hcdn.ticket.domain;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Equipo")
+@Table(name="Preferencia")
 public class Preferencia {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
