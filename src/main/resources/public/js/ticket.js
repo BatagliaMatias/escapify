@@ -26,7 +26,7 @@ angular
 					$scope.username = "manastasio";
 
 					if ($scope.username != null && $scope.username != "") {
-						obtenerUsuario();
+					//	obtenerUsuario();
 					}
 
 					cargarEscapistas();
