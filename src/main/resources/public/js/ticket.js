@@ -86,7 +86,7 @@ angular
 					};
 
 					$scope.cargarDatosEscapista = function() {
-						console.log("A")
+						console.log($scope.escapista.id)
 					};
 
 					$scope.cargarEscapistas = function() {
