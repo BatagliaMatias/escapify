@@ -89,6 +89,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
+                                                    <md-divider ng-if="!$last"></md-divider>
                                                 </md-list-item>
                                             </md-list>
                                         </md-content>
@@ -117,9 +118,12 @@
                                                 <md-list flex>
                                                     <md-list-item  ng-repeat="integrante in equipoEscapista.integrantes">
                                                         <h4>{{integrante}}</h4>
+                                                        <md-divider ng-if="!$last"></md-divider>
                                                     </md-list-item>
                                                 </md-list>
                                             </div>
+                                            <md-button class="md-secondary">Buscar Sala</md-button>
+                                            <md-divider ng-if="!$last"></md-divider>
                                         </md-list-item>
                                     </md-list>
                                 </md-content>
