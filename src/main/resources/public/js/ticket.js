@@ -57,7 +57,7 @@ angular
 							url : 'http://srv-apache-desa.hcdn.gob.ar:9093/services/activo',
 							data : jsonToSave
 						})
-								.success(
+								.then(
 										function(response, status, headers,
 												config) { // Para convertir el
 															// json a string
@@ -69,8 +69,7 @@ angular
 													+ response.data + " ["
 													+ status + "]";
 											// $scope.inputcode.show=false;
-										})
-								.error(
+										},
 										function(response, status, headers,
 												config) {
 											$scope.error.show = true;
@@ -97,7 +96,7 @@ angular
 								method : 'GET',
 								url : '/services/escapistas',
 							})
-							.success(
+							.then(
 								function(response, status, headers,
 										 config) {
 									console.log(response.data);
@@ -108,36 +107,29 @@ angular
 										});
 
 
-								})
-							.error(
-								function(response, status, headers,
+								},function(response, status, headers,
 										 config) {
 									$scope.error.show = true;
 									$scope.error.message = "Se produjo un error obteniendo los escapistas";
-								});
+							});
 					}
 					function obtenerTickets() {
-						$http(
-								{
+						$http({
 									method : 'GET',
 									url : 'http://srv-apache-desa.hcdn.gob.ar:9093/services/'
 											+ $scope.user.id + '/tickets',
-								})
-								.success(
-										function(response, status, headers,
+						}).then(function(response, status, headers,
 												config) {
 											angular.forEach(response.data,
 													function(row) {
 														$scope.tickets
 																.push(row);
 													});
-										})
-								.error(
-										function(response, status, headers,
+								},function(response, status, headers,
 												config) {
 											$scope.error.show = true;
 											$scope.error.message = "Se produjo un error obteniendo los tickets";
-										});
+						});
 					}
 
 				});
