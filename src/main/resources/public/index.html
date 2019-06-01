@@ -33,11 +33,12 @@
 				<md-tabs md-dynamic-height class="md-primary" md-center-tabs>
 					<md-tab label="Escapistas">
 						<md-content class="md-padding">
-							<h2 class="md-display-1">Elija su escapista</h2>
-
-								<md-select placeholder="" ng-change="cargarDatosEscapista()" ng-model="escapista" md-on-open="cargarEscapistas()" style="min-width: 200px;">
-									<md-option ng-value="escapista"  ng-repeat="escapista in escapistas">{{escapista.nombre}}</md-option>
-								</md-select>
+							    <h2 class="md-display-1">Elija su escapista</h2>
+                                <md-content style="margin: 16px; padding:16px">
+                                    <md-select placeholder="" ng-change="cargarDatosEscapista()" ng-model="escapista" md-on-open="cargarEscapistas()" style="min-width: 200px;">
+                                        <md-option ng-value="escapista"  ng-repeat="escapista in escapistas">{{escapista.nombre}}</md-option>
+                                    </md-select>
+                                </md-content>
 
 								<div ng-show="isEscapistaDetalle.show"  title="Detalle Escapista">
                                     <h2 class="md-display-1">Escapista</h2>
@@ -49,30 +50,56 @@
                                             <div flex="10" layout layout-align="center center">
                                                 <span class="md-body-2">Terror</span>
                                             </div>
-                                            <md-slider flex  ng-model="escapistaDetalle.preferencia.terror" min="0" max="10" ng-disabled="true" step=""
+                                            <md-slider md-discrete flex  ng-model="escapistaDetalle.preferencia.terror" min="0" max="10" ng-disabled="true" step=""
                                                    aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
                                         </div>
                                         <div layout>
                                             <div flex="10" layout layout-align="center center">
                                                 <span class="md-body-2">Aventura</span>
                                             </div>
-                                            <md-slider flex  ng-model="escapistaDetalle.preferencia.aventura" min="0" max="10" ng-disabled="true" step=""
+                                            <md-slider md-discrete flex  ng-model="escapistaDetalle.preferencia.aventura" min="0" max="10" ng-disabled="true" step=""
                                                        aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
                                         </div>
                                         <div layout>
                                             <div flex="10" layout layout-align="center center">
                                                 <span class="md-body-2">Dificultad</span>
                                             </div>
-                                            <md-slider flex  ng-model="escapistaDetalle.preferencia.dificultad" min="0" max="10" ng-disabled="true" step=""
+                                            <md-slider md-discrete flex  ng-model="escapistaDetalle.preferencia.dificultad" min="0" max="10" ng-disabled="true" step=""
                                                        aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
                                         </div>
+
+                                        <h3>Salas jugadas</h3>
+
+                                        <md-content>
+                                            <md-list flex>
+                                                <md-list-item class="md-2-line" ng-repeat="salaJugada in escapistaDetalle.salas">
+                                                    <div class="md-list-item-text">
+                                                        <h3> {{ salaJugada.nombre }} </h3>
+                                                        <ul>
+                                                            <li>
+                                                                Terror: {{salaJugada.preferencia.terror}}
+                                                            </li>
+                                                            <li>
+                                                                Aventura: {{salaJugada.preferencia.aventura}}
+                                                            </li>
+                                                            <li>
+                                                                Dificultad: {{salaJugada.preferencia.dificultad}}
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </md-list-item>
+                                            </md-list>
+                                        </md-content>
+
+
+
                                     </md-content>
 								</div>
 
 
 
 
-								DIBUJAR DATOS DEL USUARIO, SALAS JUGADAS, PREFERENCIAS(EN FUTURO EDITAR PREFERENCIAS)
+
 						</md-content>
 					</md-tab>
 
