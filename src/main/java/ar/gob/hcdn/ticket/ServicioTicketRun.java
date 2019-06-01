@@ -1,5 +1,6 @@
 package ar.gob.hcdn.ticket;
 
+import ar.gob.hcdn.ticket.config.MyExceptionHandler;
 import ar.gob.hcdn.ticket.config.SwaggerConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +13,7 @@ public class ServicioTicketRun {
 
 	public static void main(String[] args) {
 
-		logger.info("Version del servicio 1.0.4");
+		Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler());
 		SpringApplication.run(new Object[] { ServicioTicketRun.class, SwaggerConfig.class }, args);
 	}
 
