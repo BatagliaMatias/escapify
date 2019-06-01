@@ -63,6 +63,7 @@ public class EscapifyDAO {
         escapista2.getPreferencia().setTerror(10);
         escapista2.getPreferencia().setAventura(1);
         escapista2.agregarEquipo(equipoA);
+        escapista2.agregarSala(salaTerror);
         persist(escapista2);
 
         Escapista escapista3 = new Escapista();
