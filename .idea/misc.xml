@@ -5,8 +5,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../java-hcdn-common/pom.xml" />
-        <option value="$PROJECT_DIR$/../java-servicio-tickets-configuration/pom.xml" />
       </list>
     </option>
   </component>

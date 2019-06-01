@@ -11,7 +11,7 @@ public class Sala {
     private Long pk;
     private String nombre;
     @OneToOne(cascade = CascadeType.PERSIST)
-    private Preferencia preferencia;
+    private Preferencia preferencia = new Preferencia();
 
     public Long getPk() {
         return pk;

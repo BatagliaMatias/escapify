@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-servicio-tickets-configuration" />
         <module name="escapify" />
-        <module name="java-hcdn-common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-hcdn-common" target="1.5" />
+      <module name="java-servicio-tickets-configuration" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

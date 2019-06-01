@@ -13,6 +13,7 @@ public class Preferencia {
     private int aventura = 0;
     private int dificultad = 0;
 
+
     public int getTerror() {
         return terror;
     }

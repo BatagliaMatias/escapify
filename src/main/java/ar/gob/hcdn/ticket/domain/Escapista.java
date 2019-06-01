@@ -12,10 +12,9 @@ public class Escapista {
     @Column(name="dbId")
     private Long pk;
     private String nombre;
-    private String apellido;
     private String usuario;
     @OneToOne(cascade = CascadeType.PERSIST)
-    private Preferencia preferencia;
+    private Preferencia preferencia = new Preferencia();
     @OneToMany(cascade = CascadeType.PERSIST)
     private List<Sala> salas = new ArrayList<>();
     @ManyToMany(cascade = {
@@ -28,20 +27,20 @@ public class Escapista {
     public Escapista() {
     }
 
+    public void agregarEquipo(Equipo equipo){
+        equipos.add(equipo);
+    }
+
+    public void agregarSala(Sala sala){
+        salas.add(sala);
+    }
+
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getUsuario() {
