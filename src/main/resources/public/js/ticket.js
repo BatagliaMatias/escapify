@@ -14,7 +14,7 @@ angular
 		})
 		.controller(
 				'CargaTickets',
-				function($scope, $http) {
+				function($scope, $http,$mdSidenav) {
 
 					$scope.idEscapista = {
 						selected : "None"
