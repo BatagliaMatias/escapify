@@ -1,6 +1,7 @@
 package ar.gob.hcdn.ticket.controller;
 
 import ar.gob.hcdn.ticket.common.HcdnResponse;
+import ar.gob.hcdn.ticket.dto.BusquedaEquipoSalaDTO;
 import ar.gob.hcdn.ticket.dto.EscapistaDTO;
 import ar.gob.hcdn.ticket.dto.UserDTO;
 import ar.gob.hcdn.ticket.service.EscapifyService;
@@ -64,6 +65,12 @@ public class TicketController {
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
+	@GetMapping("equipo/{equipoID}/sala/buscar")
+	public ResponseEntity<HcdnResponse<BusquedaEquipoSalaDTO>> buscarSala(@PathVariable("equipoID") Long equipoID){
+		HcdnResponse<BusquedaEquipoSalaDTO> response = new HcdnResponse<>();
+		response.setData(escapifyService.buscarSala(equipoID));
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
 
 
 

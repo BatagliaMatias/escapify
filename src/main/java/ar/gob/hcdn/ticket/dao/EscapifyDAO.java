@@ -114,4 +114,7 @@ public class EscapifyDAO {
     }
 
 
+    public List<Sala> getSalas() {
+        return persistenceService.createQuery("from Sala s", Sala.class).getResultList();
+    }
 }

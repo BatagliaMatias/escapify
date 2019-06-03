@@ -42,16 +42,7 @@ public class EscapistaTransformer {
 
         escapistaDTO.setSalas(new ArrayList<>());
         for(Sala sala : escapista.getSalas()){
-            SalaDTO salaDTO = new SalaDTO();
-            salaDTO.setId(sala.getPk());
-            salaDTO.setNombre(sala.getNombre());
-
-            PreferenciaDTO salaPreferenciaDTO = new PreferenciaDTO();
-            salaPreferenciaDTO.setAventura(sala.getPreferencia().getAventura());
-            salaPreferenciaDTO.setDificultad(sala.getPreferencia().getDificultad());
-            salaPreferenciaDTO.setTerror(sala.getPreferencia().getTerror());
-
-            salaDTO.setPreferencia(salaPreferenciaDTO);
+            SalaDTO salaDTO = getSalaDTO(sala);
 
             escapistaDTO.getSalas().add(salaDTO);
         }
@@ -64,5 +55,19 @@ public class EscapistaTransformer {
         escapistaDTO.setPreferencia(preferenciaDTO);
 
         return escapistaDTO;
+    }
+
+    public SalaDTO getSalaDTO(Sala sala) {
+        SalaDTO salaDTO = new SalaDTO();
+        salaDTO.setId(sala.getPk());
+        salaDTO.setNombre(sala.getNombre());
+
+        PreferenciaDTO salaPreferenciaDTO = new PreferenciaDTO();
+        salaPreferenciaDTO.setAventura(sala.getPreferencia().getAventura());
+        salaPreferenciaDTO.setDificultad(sala.getPreferencia().getDificultad());
+        salaPreferenciaDTO.setTerror(sala.getPreferencia().getTerror());
+
+        salaDTO.setPreferencia(salaPreferenciaDTO);
+        return salaDTO;
     }
 }

@@ -4,6 +4,7 @@ public class SalaDTO {
     private String nombre;
     private Long id;
     private PreferenciaDTO preferencia;
+    private double puntaje = 0;
 
     public String getNombre() {
         return nombre;
@@ -27,5 +28,13 @@ public class SalaDTO {
 
     public void setPreferencia(PreferenciaDTO preferencia) {
         this.preferencia = preferencia;
+    }
+
+    public double getPuntaje() {
+        return puntaje;
+    }
+
+    public void setPuntaje(double puntaje) {
+        this.puntaje = puntaje;
     }
 }

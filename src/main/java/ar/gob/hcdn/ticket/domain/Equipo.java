@@ -1,8 +1,12 @@
 package ar.gob.hcdn.ticket.domain;
 
+import com.google.common.collect.Lists;
+
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name="Equipo")
@@ -37,5 +41,13 @@ public class Equipo {
 
     public void setPk(Long pk) {
         this.pk = pk;
+    }
+
+    public List<Sala> getSalasJugadas() {
+        Set<Sala> setSalasEquipo = new HashSet<>();
+        for(Escapista escapista: escapistas){
+            setSalasEquipo.addAll(escapista.getSalas());
+        }
+        return Lists.newArrayList(setSalasEquipo);
     }
 }
