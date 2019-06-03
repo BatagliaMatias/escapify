@@ -47,7 +47,7 @@
 					<md-tab label="Escapistas">
 						<md-content class="md-padding">
 
-                                <md-content  ng-show="!isEscapistaDetalle.show" style="margin: 16px; padding:16px">
+                                <md-content  ng-show="!isEscapistaDetalle.show" >
                                     <h2 class="md-display-1">Elija su escapista</h2>
                                     <md-select placeholder="" ng-change="cargarDatosEscapista()" ng-model="escapista" md-on-open="cargarEscapistas()" style="min-width: 200px;">
                                         <md-option ng-value="escapista"  ng-repeat="escapista in escapistas">{{escapista.nombre}}</md-option>
@@ -56,7 +56,7 @@
 
 								<div ng-show="isEscapistaDetalle.show"  title="Detalle Escapista">
                                     <h2 class="md-display-1">Escapista</h2>
-                                    <md-content style="margin: 16px; padding:16px">
+                                    <md-content>
                                         <h3>Nombre: {{escapistaDetalle.nombre}}</h3>
                                         <h3>Preferencias</h3>
                                         <div layout>
@@ -144,7 +144,7 @@
 					<md-tab label="Salas" ng-disabled="!mostrarSalas">
 						<md-content class="md-padding">
 							<h2 class="md-display-1">Salas</h2>
-                            <md-content  ng-show="!historial" style="margin: 16px; padding:16px">
+                            <md-content  ng-show="!historial" >
                                 <h3>Preferencias del equipo</h3>
                                 <div layout>
                                     <div flex="15" layout layout-align="center center">
@@ -197,7 +197,7 @@
                                 </md-content>
 
 
-                                <md-content  ng-show="historial" style="margin: 16px; padding:16px">
+                                <md-content  ng-show="historial" >
                                     <h3>Historial</h3>
                                     <md-button ng-click="verHistorial(false)" class="md-primary">Ver recomendaciones</md-button>
 
