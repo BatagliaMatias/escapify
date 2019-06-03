@@ -27,7 +27,7 @@ angular
 					};
 
 					$scope.tabSelectedIndex = 0;
-
+					$scope.mostrarSalas = false;
 					$scope.error = {
 						show : false,
 						message : ""
@@ -46,7 +46,9 @@ angular
 					};
 
 					$scope.salasParaEquipo =  function(idEquipo){
+						$scope.mostrarSalas = true;
 						$scope.tabSelectedIndex = 2;
+
 						console.log($scope.tabSelectedIndex);
 						console.log("Equipo " + idEquipo);
 					};
@@ -104,5 +106,13 @@ angular
 						}
 
 					};
+
+					$scope.toggleLeft = buildToggler('left');
+
+					function buildToggler(componentId) {
+						return function() {
+							$mdSidenav(componentId).toggle();
+						};
+					}
 
 				});
