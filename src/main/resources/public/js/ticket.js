@@ -107,7 +107,7 @@ angular
 
 					};
 
-					$scope.toggleLeft = buildToggler('right');
+					$scope.toggleRight = buildToggler('right');
 
 					function buildToggler(componentId) {
 						return function() {
