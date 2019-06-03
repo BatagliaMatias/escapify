@@ -209,7 +209,7 @@ ul {
 
 @media (max-width: 960px) {
   md-list-item {
-    width: 100% !important;
+    width: 95% !important;
     margin-right: 0 !important;
   }
 
