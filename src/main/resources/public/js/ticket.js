@@ -2,8 +2,9 @@ angular
 		.module('ticket', ['ngMaterial', 'ngMessages'])
 		.config(function($mdThemingProvider) {
 			$mdThemingProvider.theme('default')
-				.primaryPalette('pink')
-				.accentPalette('orange');
+				.primaryPalette('orange')
+				.accentPalette('cyan')
+				.enableBrowserColor();
 		})
 		.controller(
 				'CargaTickets',
