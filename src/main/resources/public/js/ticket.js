@@ -1,13 +1,5 @@
 angular
 		.module('ticket', ['ngMaterial', 'ngMessages'])
-		.config(function($mdThemingProvider) {
-			// Enable browser color
-			$mdThemingProvider.enableBrowserColor({
-				theme: 'myTheme', // Default is 'default'
-				palette: 'accent', // Default is 'primary', any basic material palette and extended palettes are available
-				hue: '200' // Default is '800'
-			});
-		})
 		.controller(
 				'CargaTickets',
 				function($scope, $http) {
