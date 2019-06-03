@@ -27,7 +27,7 @@
 </head>
 
 <body>
-	<div ng-controller="CargaTickets">
+	<div ng-controller="CargaTickets" data-ng-init="cargarEscapistas()">
 
 
 
@@ -49,7 +49,7 @@
 
                                 <md-content  ng-show="!isEscapistaDetalle.show" >
                                     <h2 class="md-display-1">Elija su escapista</h2>
-                                    <md-select placeholder="" ng-change="cargarDatosEscapista()" ng-model="escapista" md-on-open="cargarEscapistas()" style="min-width: 200px;">
+                                    <md-select placeholder="" ng-change="cargarDatosEscapista()" ng-model="escapista"  style="min-width: 200px;">
                                         <md-option ng-value="escapista"  ng-repeat="escapista in escapistas">{{escapista.nombre}}</md-option>
                                     </md-select>
                                 </md-content>
