@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -62,6 +63,10 @@ public class EscapifyService {
         for(Sala sala : salasJugadas){
             salasJugadasDTO.add(escapistaTransformer.getSalaDTO(sala));
         }
+
+        salasDTO.sort(Comparator.comparing(sala -> sala.getNombre()));
+        salasDTO.sort(Comparator.comparingDouble(sala -> sala.getPuntaje()));
+        salasJugadasDTO.sort(Comparator.comparing(sala -> sala.getNombre()));
 
         BusquedaEquipoSalaDTO res = new BusquedaEquipoSalaDTO();
         res.setSalasJugadas(salasJugadasDTO);
