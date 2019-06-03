@@ -146,27 +146,18 @@
 						<md-content class="md-padding">
 							<h2 class="md-display-1">Salas</h2>
 
+                            <md-content  ng-show="!historial" style="margin: 16px; padding:16px">
+                                <h2 class="md-display-1">Recomendaciones</h2>
+                                <md-button ng-click="verHistorial(true)" class="md-primary">Ver historial</md-button>
+
+                            </md-content>
 
 
+                            <md-content  ng-show="historial" style="margin: 16px; padding:16px">
+                                <h2 class="md-display-1">Historial</h2>
+                                <md-button ng-click="verHistorial(false)" class="md-primary">Ver historial</md-button>
 
-
-                            <md-tabs md-stretch-tabs="always" md-swipe-content="true" md-dynamic-height class="md-primary"  md-center-tabs>
-                                <md-tab label="Recomendaciones">
-                                    <md-content class="md-padding">
-                                        Mostrar resultado busqueda
-
-                                    </md-content>
-                                </md-tab>
-
-                                <md-tab label="Jugadas">
-                                    <md-content class="md-padding">
-                                        Mostrar historial
-
-                                    </md-content>
-                                </md-tab>
-
-                            </md-tabs>
-
+                            </md-content>
 
 
 

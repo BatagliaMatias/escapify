@@ -107,6 +107,11 @@ angular
 
 					};
 
+					$scope.historial = false;
+					$scope.verHistorial = function(valor){
+						$scope.historial = valor;
+					};
+
 					$scope.toggleRight = buildToggler('right');
 
 					function buildToggler(componentId) {
