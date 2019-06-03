@@ -142,16 +142,16 @@
 						</md-content>
 					</md-tab>
 
-					<md-tab label="Salas" ng-disabled="mostrarSalas">
+					<md-tab label="Salas" ng-disabled="!mostrarSalas">
 						<md-content class="md-padding">
 							<h2 class="md-display-1">Salas</h2>
                             <section layout="row" flex>
 
-                                <md-sidenav class="md-sidenav-left" md-component-id="left"
-                                            md-disable-backdrop="" md-whiteframe="4">
+                                <md-sidenav class="md-sidenav-right" md-component-id="right"
+                                            md-disable-backdrop="" md-whiteframe="50">
 
-                                    <md-toolbar class="md-theme-indigo">
-                                        <h1 class="md-toolbar-tools">Disabled Backdrop</h1>
+                                    <md-toolbar>
+                                        <h1 class="md-toolbar-tools">Salas jugadas del equipo</h1>
                                     </md-toolbar>
 
                                     <md-content layout-margin="">
@@ -159,7 +159,7 @@
                                             This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.
                                         </p>
                                         <md-button ng-click="toggleLeft()" class="md-accent">
-                                            Close this Sidenav
+                                            Ver salas recomendadas
                                         </md-button>
                                     </md-content>
 
@@ -174,8 +174,8 @@
                                         </p>
 
                                         <div>
-                                            <md-button ng-click="toggleLeft()" class="md-raised">
-                                                Toggle Sidenav
+                                            <md-button ng-click="toggleRight()" class="md-raised">
+                                                Ver salas jugadas del equipo
                                             </md-button>
                                         </div>
 
