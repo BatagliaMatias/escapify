@@ -23,13 +23,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-748">
-              <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+            <state relative-caret-position="1836">
+              <caret line="141" column="54" lean-forward="true" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="54" />
               <folding>
-                <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-content#1;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/ticket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
+            <state relative-caret-position="272">
               <caret line="61" column="60" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="60" />
             </state>
           </provider>
@@ -190,6 +187,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>A</find>
+      <find>style=&quot;margin: 16px; padding:16px&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -490,21 +488,7 @@
       <workItem from="1559276931804" duration="7852000" />
       <workItem from="1559359840376" duration="15770000" />
       <workItem from="1559419410628" duration="10220000" />
-      <workItem from="1559507627907" duration="18021000" />
-    </task>
-    <task id="LOCAL-00037" summary="frontend escapista">
-      <created>1559420652890</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1559420652890</updated>
-    </task>
-    <task id="LOCAL-00038" summary="frontend escapista">
-      <created>1559420978459</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1559420978459</updated>
+      <workItem from="1559507627907" duration="18926000" />
     </task>
     <task id="LOCAL-00039" summary="frontend escapista">
       <created>1559421426360</created>
@@ -835,11 +819,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559541345676</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="busqueda de sala">
+      <created>1559541624103</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1559541624103</updated>
+    </task>
+    <task id="LOCAL-00087" summary="busqueda de sala">
+      <created>1559541847835</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1559541847835</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51863000" />
+    <option name="totallyTimeSpent" value="52768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -1208,9 +1206,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dao/EscapifyDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3759#3760#0" expanded="true" />
+            <element signature="e#3855#3856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/ticket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
+        <state relative-caret-position="272">
           <caret line="61" column="60" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="60" />
         </state>
       </provider>
@@ -1225,27 +1235,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/gob/hcdn/ticket/dao/EscapifyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3759#3760#0" expanded="true" />
-            <element signature="e#3855#3856#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+        <state relative-caret-position="1836">
+          <caret line="141" column="54" lean-forward="true" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="54" />
           <folding>
-            <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-content#1;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
