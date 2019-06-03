@@ -128,3 +128,13 @@
 .textoNaranja{
   color: #d27b31 !important;
 }
+
+.titulo-naranja {
+  border-bottom: 2px solid orange;
+  padding-bottom: 4px;
+  width: 50%;
+  margin-top: 50px;
+  color: #444;
+  font-weight: normal;
+  font-size: 24px;
+}

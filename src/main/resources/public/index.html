@@ -52,7 +52,7 @@
 								<div ng-show="isEscapistaDetalle.show"  title="Detalle Escapista">
                                     <h2 class="md-display-1">Bienvenido <span class="textoNaranja">{{escapistaDetalle.nombre}}</span></h2>
                                     <md-content >
-                                        <h3>Preferencias</h3>
+                                        <h3 class="titulo-naranja">PREFERENCIAS</h3>
                                         <div layout class="layout-row preferencias">
                                             <div flex="15" layout layout-align="center center">
                                                 <span class="md-body-2">Terror</span>
@@ -78,14 +78,14 @@
                                         <md-button ng-click="verEquipos()" class="md-primary">Ver equipos</md-button>
 
 
-                                        <h3>Salas jugadas</h3>
+                                        <h3 class="titulo-naranja">SALAS JUGADAS</h3>
 
                                         <md-content>
                                             <md-list flex>
                                                 <md-list-item class="md-2-line" ng-repeat="salaJugada in escapistaDetalle.salas">
                                                     <div class="md-list-item-text">
                                                         <h3> Nombre: {{ salaJugada.nombre }} </h3>
-                                                        <h3> Preferencias: </h3>
+                                                        <h3 class="titulo-naranja"> PREFERENCIAS: </h3>
                                                         <ul>
                                                             <li>
                                                                 Terror: {{salaJugada.preferencia.terror}}
