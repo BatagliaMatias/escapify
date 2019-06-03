@@ -167,3 +167,33 @@ md-slider.md-default-theme[disabled][readonly] .md-sign:after, md-slider[disable
 .md-button.md-default-theme.md-primary, .md-button.md-primary:hover {
   background: rgb(0,0,0);
 }
+
+md-list-item {width:50%; float:left;}
+
+.titSalas {
+  color: #d27b31 !important;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+  margin-left: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.titCaracteristicas {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #444;
+  margin-top: 20px;
+  border-bottom: 1px solid #888;
+  padding-bottom: 7px;
+}
