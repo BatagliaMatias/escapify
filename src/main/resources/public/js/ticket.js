@@ -26,6 +26,8 @@ angular
 						show : false
 					};
 
+					$scope.busquedaSalas={};
+
 					$scope.tabSelectedIndex = 0;
 					$scope.mostrarSalas = false;
 					$scope.error = {
@@ -46,11 +48,28 @@ angular
 					};
 
 					$scope.salasParaEquipo =  function(idEquipo){
-						$scope.mostrarSalas = true;
-						$scope.tabSelectedIndex = 2;
+						console.log("/services/equipo/"+idEquipo+"/sala/buscar");
+						if(idEquipo != null){
+							$http(
+								{
+									method : 'GET',
+									url : '/services/equipo/'+idEquipo+'/sala/buscar',
+								})
+								.then(
+									function(response, status, headers,
+											 config) {
 
-						console.log($scope.tabSelectedIndex);
-						console.log("Equipo " + idEquipo);
+										$scope.busquedaSalas = response.data.data;
+										$scope.mostrarSalas = true;
+										$scope.tabSelectedIndex = 2;
+
+									},function(response, status, headers,
+											   config) {
+										$scope.error.show = true;
+										$scope.error.message = "Se produjo un error obteniendo datos del escapista";
+									});
+						}
+
 					};
 
 					$scope.cargarDatosEscapista = function() {
