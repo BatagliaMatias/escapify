@@ -16,6 +16,7 @@ angular
 					$scope.isEscapistaDetalle = {
 						show : false
 					};
+
 					$scope.tabSelectedIndex = 0;
 					$scope.tickets = [];
 					$scope.error = {
@@ -42,7 +43,8 @@ angular
 
 					$scope.salasParaEquipo =  function(idEquipo){
 						$scope.tabSelectedIndex = 2;
-						alert("Equipo " + idEquipo);
+						console.log($scope.tabSelectedIndex);
+						console.log("Equipo " + idEquipo);
 					};
 
 					$scope.cargarActivoEnTicket = function() {
