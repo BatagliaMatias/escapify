@@ -145,45 +145,33 @@
 					<md-tab label="Salas" ng-disabled="!mostrarSalas">
 						<md-content class="md-padding">
 							<h2 class="md-display-1">Salas</h2>
-                            <section layout="row" flex>
 
-                                <md-sidenav class="md-sidenav-right" md-component-id="right"
-                                            md-disable-backdrop="" md-whiteframe="50">
 
-                                    <md-toolbar>
-                                        <h1 class="md-toolbar-tools">Salas jugadas del equipo</h1>
-                                    </md-toolbar>
 
-                                    <md-content layout-margin="">
-                                        <p>
-                                            This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.
-                                        </p>
-                                        <md-button ng-click="toggleLeft()" class="md-accent">
-                                            Ver salas recomendadas
-                                        </md-button>
+
+
+                            <md-tabs md-stretch-tabs="always" md-swipe-content="true" md-dynamic-height class="md-primary"  md-center-tabs>
+                                <md-tab label="Recomendaciones">
+                                    <md-content class="md-padding">
+                                        Mostrar resultado busqueda
+
                                     </md-content>
+                                </md-tab>
 
-                                </md-sidenav>
+                                <md-tab label="Jugadas">
+                                    <md-content class="md-padding">
+                                        Mostrar historial
 
-                                <md-content flex layout-padding>
+                                    </md-content>
+                                </md-tab>
 
-                                    <div layout="column" layout-align="top center">
-                                        <p>
-                                            Developers can also disable the backdrop of the sidenav.<br/>
-                                            This will disable the functionality to click outside to close the sidenav.
-                                        </p>
+                            </md-tabs>
 
-                                        <div>
-                                            <md-button ng-click="toggleRight()" class="md-raised">
-                                                Ver salas jugadas del equipo
-                                            </md-button>
-                                        </div>
 
-                                    </div>
 
-                                </md-content>
 
-                            </section>
+
+
 						</md-content>
 					</md-tab>
 
