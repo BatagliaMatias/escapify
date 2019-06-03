@@ -168,12 +168,20 @@ md-slider.md-default-theme[disabled][readonly] .md-sign:after, md-slider[disable
   background: rgb(0,0,0);
 }
 
-md-list-item {width:50%; float:left;}
+md-list-item {
+  width: 38%;
+  float: left;
+  border: 1px solid #ddd;
+  padding: 10px!important;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 
 .titSalas {
   color: #d27b31 !important;
-  font-size: 30px;
-  text-transform: uppercase;
+  font-size: 30px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 15px !important;
 }
 
 ul li {
@@ -191,9 +199,9 @@ ul {
 .titCaracteristicas {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 15px !important;
   color: #444;
   margin-top: 20px;
-  border-bottom: 1px solid #888;
+  border-bottom: 1px solid #888 !important;
   padding-bottom: 7px;
 }
