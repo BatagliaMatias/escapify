@@ -72,6 +72,10 @@ angular
 
 					};
 
+					$scope.verEquipos = function(){
+						$scope.tabSelectedIndex = 1;
+					};
+
 					$scope.cargarDatosEscapista = function() {
 						console.log("/services/escapista/" + $scope.escapista.id);
 						if($scope.escapista.id != null){
