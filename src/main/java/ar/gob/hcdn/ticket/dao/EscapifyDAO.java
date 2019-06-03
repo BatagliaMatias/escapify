@@ -54,7 +54,7 @@ public class EscapifyDAO {
         persist(breakingBad);
 
         Sala alien  = new Sala();
-        alien.setNombre("Breaking Bad");
+        alien.setNombre("Alien");
         alien.getPreferencia().setAventura(5);
         alien.getPreferencia().setTerror(7);
         alien.getPreferencia().setDificultad(10);
