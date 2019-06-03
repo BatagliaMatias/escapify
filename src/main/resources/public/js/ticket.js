@@ -1,5 +1,10 @@
 angular
 		.module('ticket', ['ngMaterial', 'ngMessages'])
+		.config(function($mdThemingProvider) {
+			$mdThemingProvider.theme('default')
+				.primaryPalette('pink')
+				.accentPalette('orange');
+		})
 		.controller(
 				'CargaTickets',
 				function($scope, $http) {
