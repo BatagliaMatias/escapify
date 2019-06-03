@@ -123,6 +123,9 @@
 
 .preferencias{
   width: 97% !important;
+  background: #eee;
+  padding-right: 20px;
+  margin: 20px 0;
 }
 
 .textoNaranja{
@@ -137,4 +140,8 @@
   color: #444;
   font-weight: normal;
   font-size: 24px;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif; !important
 }
