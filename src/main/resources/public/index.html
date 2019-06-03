@@ -141,30 +141,31 @@
 					<md-tab label="Salas" ng-disabled="!mostrarSalas">
 						<md-content class="md-padding">
 							<h2 class="md-display-1">Salas</h2>
-                            <md-content  ng-show="!historial" >
+                            <md-content>
                                 <h3>Preferencias del equipo</h3>
-                                <div layout>
-                                    <div flex="15" layout layout-align="center center">
-                                        <span class="md-body-2">Terror</span>
+                                <md-content style="padding-right: 50%">
+                                    <div layout>
+                                        <div flex="15" layout layout-align="center center">
+                                            <span class="md-body-2">Terror</span>
+                                        </div>
+                                        <md-slider md-discrete flex  ng-model="busquedaSalas.equipoPreferencias.terror" min="1" max="10" ng-disabled="true" step=""
+                                                   aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
                                     </div>
-                                    <md-slider md-discrete flex  ng-model="busquedaSalas.equipoPreferencias.terror" min="1" max="10" ng-disabled="true" step=""
-                                               aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
-                                </div>
-                                <div layout>
-                                    <div flex="15" layout layout-align="center center">
-                                        <span class="md-body-2">Aventura</span>
+                                    <div layout>
+                                        <div flex="15" layout layout-align="center center">
+                                            <span class="md-body-2">Aventura</span>
+                                        </div>
+                                        <md-slider md-discrete flex  ng-model="busquedaSalas.equipoPreferencias.aventura" min="1" max="10" ng-disabled="true" step=""
+                                                   aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
                                     </div>
-                                    <md-slider md-discrete flex  ng-model="busquedaSalas.equipoPreferencias.aventura" min="1" max="10" ng-disabled="true" step=""
-                                               aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
-                                </div>
-                                <div layout>
-                                    <div flex="15" layout layout-align="center center">
-                                        <span class="md-body-2">Dificultad</span>
+                                    <div layout>
+                                        <div flex="15" layout layout-align="center center">
+                                            <span class="md-body-2">Dificultad</span>
+                                        </div>
+                                        <md-slider md-discrete flex  ng-model="busquedaSalas.equipoPreferencias.dificultad" min="1" max="10" ng-disabled="true" step=""
+                                                   aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
                                     </div>
-                                    <md-slider md-discrete flex  ng-model="busquedaSalas.equipoPreferencias.dificultad" min="1" max="10" ng-disabled="true" step=""
-                                               aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
-                                </div>
-
+                                </md-content>
                                 <md-content  ng-show="!historial">
                                     <h3>Recomendaciones</h3>
                                     <md-button ng-click="verHistorial(true)" class="md-primary">Ver historial</md-button>
@@ -172,6 +173,7 @@
                                     <md-list flex>
                                         <md-list-item class="md-2-line" ng-repeat="salaRecomendada in busquedaSalas.salasRanking">
                                             <div class="md-list-item-text">
+
                                                 <h3> <strong>Nombre: {{ salaRecomendada.nombre }}</strong> </h3>
                                                 <h3> Distancia Preferencias: {{ salaRecomendada.puntaje }} </h3>
                                                 <h3> Preferencias:</h3>

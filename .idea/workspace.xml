@@ -23,10 +23,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
-              <caret line="141" column="54" lean-forward="true" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="54" />
+            <state relative-caret-position="194">
+              <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-content#0;n#div#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,6 +191,7 @@
     <findStrings>
       <find>A</find>
       <find>style=&quot;margin: 16px; padding:16px&quot;</find>
+      <find>padding-right: 50%</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -488,21 +492,7 @@
       <workItem from="1559276931804" duration="7852000" />
       <workItem from="1559359840376" duration="15770000" />
       <workItem from="1559419410628" duration="10220000" />
-      <workItem from="1559507627907" duration="18926000" />
-    </task>
-    <task id="LOCAL-00039" summary="frontend escapista">
-      <created>1559421426360</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1559421426360</updated>
-    </task>
-    <task id="LOCAL-00040" summary="frontend escapista">
-      <created>1559421588122</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1559421588122</updated>
+      <workItem from="1559507627907" duration="19517000" />
     </task>
     <task id="LOCAL-00041" summary="frontend escapista">
       <created>1559421939258</created>
@@ -833,15 +823,28 @@
       <option name="project" value="LOCAL" />
       <updated>1559541847835</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="busqueda de sala">
+      <created>1559542537140</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1559542537140</updated>
+    </task>
+    <task id="LOCAL-00089" summary="busqueda de sala">
+      <created>1559542775925</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1559542775925</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52768000" />
+    <option name="totallyTimeSpent" value="53359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49865952" visible="true" weight="0.2590604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1237,10 +1240,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="141" column="54" lean-forward="true" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="54" />
+        <state relative-caret-position="194">
+          <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-content#0;n#div#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
