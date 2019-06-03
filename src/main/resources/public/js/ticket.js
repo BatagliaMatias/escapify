@@ -3,7 +3,7 @@ angular
 		.config(function($mdThemingProvider) {
 			$mdThemingProvider.theme('default')
 				.primaryPalette('orange')
-				.accentPalette('black');
+				.accentPalette('deep-orange');
 
 			$mdThemingProvider.enableBrowserColor({
 				theme: 'default',
