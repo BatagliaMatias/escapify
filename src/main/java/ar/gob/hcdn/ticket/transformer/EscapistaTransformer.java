@@ -8,12 +8,14 @@ import ar.gob.hcdn.ticket.dto.EquipoDTO;
 import ar.gob.hcdn.ticket.dto.EscapistaDTO;
 import ar.gob.hcdn.ticket.dto.PreferenciaDTO;
 import ar.gob.hcdn.ticket.dto.SalaDTO;
+import org.apache.commons.math3.ml.distance.EuclideanDistance;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
 @Service
 public class EscapistaTransformer {
+    private EuclideanDistance euclideanDistance = new EuclideanDistance();
     public EscapistaDTO transform(Escapista escapista){
         EscapistaDTO escapistaDTO = new EscapistaDTO();
         escapistaDTO.setNombre(escapista.getNombre());
@@ -78,5 +80,12 @@ public class EscapistaTransformer {
         preferenciasEquipoDTO.setDificultad(preferenciasEquipo[Preferencia.POS_DIFICULTAD]);
         preferenciasEquipoDTO.setTerror(preferenciasEquipo[Preferencia.POS_TERROR]);
         return preferenciasEquipoDTO;
+    }
+
+    public SalaDTO getSalaDTO(Sala sala, double[] preferenciasEquipo) {
+        SalaDTO salaDTO = getSalaDTO(sala);
+        double[] salaValores = sala.getPreferencia().getVectorDouble();
+        salaDTO.setPuntaje(euclideanDistance.compute(salaValores,preferenciasEquipo));
+        return salaDTO;
     }
 }

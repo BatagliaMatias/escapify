@@ -54,7 +54,9 @@ public class EscapifyService {
         List<SalaDTO> salasDTO = new ArrayList<>();
 
         for(Sala sala : salasFiltradas){
-            salasDTO.add(escapistaTransformer.getSalaDTO(sala));
+            salasDTO.add(escapistaTransformer.getSalaDTO(sala,preferenciasEquipo));
+
+
         }
 
         for(Sala sala : salasJugadas){
