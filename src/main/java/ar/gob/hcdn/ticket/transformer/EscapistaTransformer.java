@@ -2,6 +2,7 @@ package ar.gob.hcdn.ticket.transformer;
 
 import ar.gob.hcdn.ticket.domain.Equipo;
 import ar.gob.hcdn.ticket.domain.Escapista;
+import ar.gob.hcdn.ticket.domain.Preferencia;
 import ar.gob.hcdn.ticket.domain.Sala;
 import ar.gob.hcdn.ticket.dto.EquipoDTO;
 import ar.gob.hcdn.ticket.dto.EscapistaDTO;
@@ -69,5 +70,13 @@ public class EscapistaTransformer {
 
         salaDTO.setPreferencia(salaPreferenciaDTO);
         return salaDTO;
+    }
+
+    public PreferenciasEquipoDTO transform(double[] preferenciasEquipo) {
+        PreferenciasEquipoDTO preferenciasEquipoDTO = new PreferenciasEquipoDTO();
+        preferenciasEquipoDTO.setAventura(preferenciasEquipo[Preferencia.POS_AVENTURA]);
+        preferenciasEquipoDTO.setDificultad(preferenciasEquipo[Preferencia.POS_DIFICULTAD]);
+        preferenciasEquipoDTO.setTerror(preferenciasEquipo[Preferencia.POS_TERROR]);
+        return preferenciasEquipoDTO;
     }
 }

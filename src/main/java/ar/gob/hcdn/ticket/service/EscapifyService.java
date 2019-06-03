@@ -41,6 +41,7 @@ public class EscapifyService {
 
     public BusquedaEquipoSalaDTO buscarSala(Long equipoID) {
         Equipo equipo = escapifyDAO.findEquipoById(equipoID);
+        double[] preferenciasEquipo = equipo.getVectorPreferencias();
         List<Sala> salas = escapifyDAO.getSalas();
         List<Sala> salasJugadas = equipo.getSalasJugadas();
 
@@ -63,6 +64,7 @@ public class EscapifyService {
         BusquedaEquipoSalaDTO res = new BusquedaEquipoSalaDTO();
         res.setSalasJugadas(salasJugadasDTO);
         res.setSalasRanking(salasDTO);
+        res.setEquipoPreferencias(escapistaTransformer.transform(preferenciasEquipo));
 
         return res;
     }

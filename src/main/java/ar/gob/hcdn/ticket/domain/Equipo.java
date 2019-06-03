@@ -50,4 +50,16 @@ public class Equipo {
         }
         return Lists.newArrayList(setSalasEquipo);
     }
+
+    public double[] getVectorPreferencias() {
+        Preferencia preferencia = new Preferencia();
+        for(Escapista escapista : escapistas){
+            preferencia.add(escapista.getPreferencia());
+        }
+        double[] preferencias = preferencia.getVectorDouble();
+        for (int i=0; i<preferencias.length; ++i){
+            preferencias[i] = preferencias[i] / escapistas.size();
+        }
+        return preferencias;
+    }
 }
