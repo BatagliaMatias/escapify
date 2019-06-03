@@ -3,8 +3,14 @@ angular
 		.config(function($mdThemingProvider) {
 			$mdThemingProvider.theme('default')
 				.primaryPalette('orange')
-				.accentPalette('cyan')
-				.enableBrowserColor();
+				.accentPalette('cyan');
+
+			$mdThemingProvider.enableBrowserColor({
+				theme: 'default',
+				palette: 'orange',      // <-- Note this, you have to use a predefined palette name
+				hue: '800'
+			});
+
 		})
 		.controller(
 				'CargaTickets',
