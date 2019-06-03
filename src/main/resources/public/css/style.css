@@ -145,3 +145,11 @@
 body{
   font-family: 'Roboto Condensed', sans-serif; !important
 }
+
+md-slider.md-default-theme[disabled][readonly] .md-sign:after, md-slider[disabled][readonly] .md-sign:after {
+  border-top-color: orange;
+}
+
+.md-sign {
+  background-color:orange!important;
+}

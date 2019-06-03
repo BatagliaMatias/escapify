@@ -4,7 +4,6 @@
     <list default="true" id="922db432-21b2-420d-91b2-02a2e6908b8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,11 +23,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2703">
-              <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+            <state relative-caret-position="221">
+              <caret line="56" column="82" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5555#5563#0" expanded="true" />
                 <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11384#11392#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="132" column="2" selection-start-line="132" selection-start-column="2" selection-end-line="132" selection-end-column="2" />
+            <state relative-caret-position="644">
+              <caret line="150" column="1" selection-start-line="150" selection-start-column="1" selection-end-line="150" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -66,6 +67,7 @@
       <find>A</find>
       <find>style=&quot;margin: 16px; padding:16px&quot;</find>
       <find>padding-right: 50%</find>
+      <find>layout-row</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -299,21 +301,7 @@
       <workItem from="1559359840376" duration="15770000" />
       <workItem from="1559419410628" duration="10220000" />
       <workItem from="1559507627907" duration="20071000" />
-      <workItem from="1559590802827" duration="3054000" />
-    </task>
-    <task id="LOCAL-00051" summary="frontend escapista">
-      <created>1559425391563</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1559425391563</updated>
-    </task>
-    <task id="LOCAL-00052" summary="frontend escapista">
-      <created>1559426079155</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1559426079155</updated>
+      <workItem from="1559590802827" duration="3841000" />
     </task>
     <task id="LOCAL-00053" summary="frontend escapista">
       <created>1559426772892</created>
@@ -644,11 +632,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559593437372</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Estilos">
+      <created>1559593882823</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1559593882823</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Estilos">
+      <created>1559594392438</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1559594392438</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56967000" />
+    <option name="totallyTimeSpent" value="57754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1011,19 +1013,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2703">
-          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+        <state relative-caret-position="221">
+          <caret line="56" column="82" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5555#5563#0" expanded="true" />
             <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11384#11392#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="132" column="2" selection-start-line="132" selection-start-column="2" selection-end-line="132" selection-end-column="2" />
+        <state relative-caret-position="644">
+          <caret line="150" column="1" selection-start-line="150" selection-start-column="1" selection-end-line="150" selection-end-column="1" />
         </state>
       </provider>
     </entry>
