@@ -23,12 +23,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+            <state relative-caret-position="376">
+              <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-content#0;n#div#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -492,21 +490,7 @@
       <workItem from="1559276931804" duration="7852000" />
       <workItem from="1559359840376" duration="15770000" />
       <workItem from="1559419410628" duration="10220000" />
-      <workItem from="1559507627907" duration="19517000" />
-    </task>
-    <task id="LOCAL-00041" summary="frontend escapista">
-      <created>1559421939258</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1559421939258</updated>
-    </task>
-    <task id="LOCAL-00042" summary="frontend escapista">
-      <created>1559422120831</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1559422120832</updated>
+      <workItem from="1559507627907" duration="20071000" />
     </task>
     <task id="LOCAL-00043" summary="frontend escapista">
       <created>1559422566821</created>
@@ -837,11 +821,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559542775925</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="busqueda de sala">
+      <created>1559543074948</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1559543074948</updated>
+    </task>
+    <task id="LOCAL-00091" summary="busqueda de sala">
+      <created>1559543372256</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1559543372256</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53359000" />
+    <option name="totallyTimeSpent" value="53913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -1240,12 +1238,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+        <state relative-caret-position="376">
+          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#md-select#0;n#md-content#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-content#0;n#div#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#md-content#0;n#md-content#0;n#md-content#0;n#md-tab#2;n#md-tabs#0;n#md-content#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
