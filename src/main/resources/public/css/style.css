@@ -153,3 +153,5 @@ md-slider.md-default-theme[disabled][readonly] .md-sign:after, md-slider[disable
 .md-sign {
   background-color:orange!important;
 }
+
+.md-body-2{font-weight:bold!important;}
