@@ -35,11 +35,16 @@
 		<div ng-cloak>
 			<md-content>
 
-        		<md-tabs md-dynamic-height class="md-primary" md-selected="tabSelectedIndex" md-center-tabs>
-                    <h1>
-                        Escapify
-                    </h1>
-                    <md-tab label="Escapistas">
+                <md-toolbar md-scroll-shrink="true" class="md-medium-tall" ng-if="true">
+                    <div class="md-toolbar-tools">
+                        <h2>
+                            Escapify
+                        </h2>
+                    </div>
+                </md-toolbar>
+
+				<md-tabs md-stretch-tabs="always" md-swipe-content="true" md-dynamic-height class="md-primary" md-selected="tabSelectedIndex" md-center-tabs>
+					<md-tab label="Escapistas">
 						<md-content class="md-padding">
 
                                 <md-content  ng-show="!isEscapistaDetalle.show" style="margin: 16px; padding:16px">
