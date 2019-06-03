@@ -1,11 +1,16 @@
 angular
 		.module('ticket', ['ngMaterial', 'ngMessages'])
+		.config(function($mdThemingProvider) {
+			// Enable browser color
+			$mdThemingProvider.enableBrowserColor({
+				theme: 'myTheme', // Default is 'default'
+				palette: 'accent', // Default is 'primary', any basic material palette and extended palettes are available
+				hue: '200' // Default is '800'
+			});
+		})
 		.controller(
 				'CargaTickets',
 				function($scope, $http) {
-					$scope.idTicket = {
-						selected : "None"
-					};
 
 					$scope.idEscapista = {
 						selected : "None"
@@ -18,7 +23,7 @@ angular
 					};
 
 					$scope.tabSelectedIndex = 0;
-					$scope.tickets = [];
+
 					$scope.error = {
 						show : false,
 						message : ""
@@ -35,65 +40,11 @@ angular
 						id : "",
 						nombre : ""
 					};
-					$scope.username = "manastasio";
-
-					if ($scope.username != null && $scope.username != "") {
-					//	obtenerUsuario();
-					}
 
 					$scope.salasParaEquipo =  function(idEquipo){
 						$scope.tabSelectedIndex = 2;
 						console.log($scope.tabSelectedIndex);
 						console.log("Equipo " + idEquipo);
-					};
-
-					$scope.cargarActivoEnTicket = function() {
-						if ($scope.idTicket.selected != "None") {
-							$scope.inputcode.show = true;
-							$scope.error.show = false;
-							$scope.ok.show = false;
-						} else {
-							$scope.inputcode.show = false;
-						}
-					};
-
-					$scope.cargarActivo = function() {
-						var jsonToSave = {
-							ticketID : '"' + $scope.idTicket.selected + '"',
-							activoNro : '"' + $scope.activoNro + '"'
-						};
-
-						$http({
-							method : 'POST',
-							url : 'http://srv-apache-desa.hcdn.gob.ar:9093/services/activo',
-							data : jsonToSave
-						})
-								.then(
-										function(response, status, headers,
-												config) { // Para convertir el
-															// json a string
-															// angular.toJson(jsonToSave,
-															// false);
-											$scope.error.show = false;
-											$scope.ok.show = true;
-											$scope.ok.message = ""
-													+ response.data + " ["
-													+ status + "]";
-											// $scope.inputcode.show=false;
-										},
-										function(response, status, headers,
-												config) {
-											$scope.error.show = true;
-											$scope.ok.show = false;
-											$scope.error.message = response.error.codigo
-													+ "-"
-													+ response.error.descCorta
-													+ " [" + status + "]";
-										});
-					};
-
-					$scope.checkCodigoActivo = function() {
-						return $scope.activoNro.trim().length != 9;
 					};
 
 					$scope.cargarDatosEscapista = function() {
@@ -149,23 +100,5 @@ angular
 						}
 
 					};
-					function obtenerTickets() {
-						$http({
-									method : 'GET',
-									url : 'http://srv-apache-desa.hcdn.gob.ar:9093/services/'
-											+ $scope.user.id + '/tickets',
-						}).then(function(response, status, headers,
-												config) {
-											angular.forEach(response.data,
-													function(row) {
-														$scope.tickets
-																.push(row);
-													});
-								},function(response, status, headers,
-												config) {
-											$scope.error.show = true;
-											$scope.error.message = "Se produjo un error obteniendo los tickets";
-						});
-					}
 
 				});
