@@ -155,3 +155,11 @@ md-slider.md-default-theme[disabled][readonly] .md-sign:after, md-slider[disable
 }
 
 .md-body-2{font-weight:bold!important;}
+
+.md-button.md-default-theme.md-primary, .md-button.md-primary {
+  background: rgb(255,152,0);
+  color: #fff;
+  float: right;
+  margin-right: 3%;
+  margin-bottom: 20px;
+}
