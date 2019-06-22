@@ -4,6 +4,7 @@ import ar.gob.hcdn.ticket.dao.EscapifyDAO;
 import ar.gob.hcdn.ticket.domain.Equipo;
 import ar.gob.hcdn.ticket.domain.Escapista;
 import ar.gob.hcdn.ticket.domain.Sala;
+import ar.gob.hcdn.ticket.dto.AddEscapistaDTO;
 import ar.gob.hcdn.ticket.dto.BusquedaEquipoSalaDTO;
 import ar.gob.hcdn.ticket.dto.EscapistaDTO;
 import ar.gob.hcdn.ticket.dto.SalaDTO;
@@ -73,4 +74,12 @@ public class EscapifyService {
 
         return res;
     }
+
+    public EscapistaDTO crearEscapista(AddEscapistaDTO addEscapistaDTO) {
+     //   Escapista escapista = escapifyDAO.findEscapistaByUsuario(addEscapistaDTO.getUsuario());
+        Escapista escapista = escapifyDAO.findEscapistaByUsuario("fede");
+        return escapistaTransformer.transform(escapista);
+    }
+
+
 }

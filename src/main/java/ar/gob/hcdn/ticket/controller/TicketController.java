@@ -1,6 +1,7 @@
 package ar.gob.hcdn.ticket.controller;
 
 import ar.gob.hcdn.ticket.common.HcdnResponse;
+import ar.gob.hcdn.ticket.dto.AddEscapistaDTO;
 import ar.gob.hcdn.ticket.dto.BusquedaEquipoSalaDTO;
 import ar.gob.hcdn.ticket.dto.EscapistaDTO;
 import ar.gob.hcdn.ticket.dto.UserDTO;
@@ -11,10 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -56,6 +54,14 @@ public class TicketController {
 		HcdnResponse<List<EscapistaDTO>> response = new HcdnResponse<>();
 		response.setData(escapifyService.getEscapistas());
 		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+
+	@PostMapping("/escapista")
+	public ResponseEntity<HcdnResponse<EscapistaDTO>> crearEscapista(@RequestBody AddEscapistaDTO addEscapistaDTO){
+		HcdnResponse<EscapistaDTO> response = new HcdnResponse<>();
+		response.setData(escapifyService.crearEscapista(addEscapistaDTO));
+		return new ResponseEntity<>(response, HttpStatus.OK);
+
 	}
 
 	@GetMapping("escapista/{userID}")

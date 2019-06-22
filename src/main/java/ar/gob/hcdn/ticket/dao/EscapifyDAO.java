@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 
@@ -168,5 +169,11 @@ public class EscapifyDAO {
 
     public List<Sala> getSalas() {
         return persistenceService.createQuery("from Sala s", Sala.class).getResultList();
+    }
+
+    public Escapista findEscapistaByUsuario(String usuario){
+       TypedQuery<Escapista> query = persistenceService.createQuery("from escapista e where e.usuario = :usuario",Escapista.class);
+       query.setParameter("usuario",usuario);
+       return query.getSingleResult();
     }
 }
