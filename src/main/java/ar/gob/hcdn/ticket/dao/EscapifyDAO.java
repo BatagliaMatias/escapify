@@ -172,7 +172,7 @@ public class EscapifyDAO {
     }
 
     public Escapista findEscapistaByUsuario(String usuario){
-       TypedQuery<Escapista> query = persistenceService.createQuery("from escapista e where e.usuario = :usuario",Escapista.class);
+       TypedQuery<Escapista> query = persistenceService.createQuery("from Escapista e where e.usuario = :usuario",Escapista.class);
        query.setParameter("usuario",usuario);
        return query.getSingleResult();
     }
