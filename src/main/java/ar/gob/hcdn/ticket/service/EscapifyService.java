@@ -80,7 +80,13 @@ public class EscapifyService {
         try{
             escapista = escapifyDAO.findEscapistaByUsuario(addEscapistaDTO.getUsuario());
         } catch (Exception e){
-            return getEscapista(21L);
+            escapista = new Escapista();
+            escapista.getPreferencia().setDificultad(1);
+            escapista.getPreferencia().setTerror(1);
+            escapista.getPreferencia().setAventura(1);
+            escapista.setUsuario(addEscapistaDTO.getUsuario());
+            escapista.setNombre(addEscapistaDTO.getNombre());
+            escapifyDAO.persist(escapista);
         }
 
         return escapistaTransformer.transformDetallado(escapista);
