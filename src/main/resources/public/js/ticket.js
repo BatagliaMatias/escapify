@@ -151,6 +151,7 @@ angular
 						console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 						$scope.isEscapistaDetalle.show = true;
 						console.log($scope.isEscapistaDetalle.show);
+						$scope.$apply();
 					}
 
 					window.onSignIn = onSignIn;
