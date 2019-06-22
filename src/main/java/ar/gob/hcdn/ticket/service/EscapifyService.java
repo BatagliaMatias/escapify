@@ -76,8 +76,7 @@ public class EscapifyService {
     }
 
     public EscapistaDTO crearEscapista(AddEscapistaDTO addEscapistaDTO) {
-     //   Escapista escapista = escapifyDAO.findEscapistaByUsuario(addEscapistaDTO.getUsuario());
-        Escapista escapista = escapifyDAO.findEscapistaByUsuario("fede");
+        Escapista escapista = escapifyDAO.findEscapistaByUsuario(addEscapistaDTO.getUsuario());
         return escapistaTransformer.transform(escapista);
     }
 
