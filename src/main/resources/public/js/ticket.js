@@ -191,6 +191,8 @@ angular
 						auth2.signOut().then(function () {
 							console.log('User signed out.');
 						});
+						$scope.isEscapistaDetalle.show = false;
+						$scope.$apply();
 					}
 
 					window.signOut = signOut;
