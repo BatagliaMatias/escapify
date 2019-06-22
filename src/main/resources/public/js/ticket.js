@@ -149,8 +149,38 @@ angular
 						console.log('Name: ' + profile.getName());
 						console.log('Image URL: ' + profile.getImageUrl());
 						console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+
+
+						console.log("/services/escapista/");
+						var dataEscapistaGoogle = {
+							"nombre" : profile.getName(),
+							"usuario" : profile.getEmail()
+						};
+						console.log(dataEscapistaGoogle);
+
+						$http(
+							{
+								method : 'POST',
+								url : '/services/escapista/',
+								data: dataEscapistaGoogle,
+							})
+							.then(
+								function(response, status, headers,
+										 config) {
+
+									$scope.escapistaDetalle = response.data.data;
+									$scope.isEscapistaDetalle.show = true;
+									console.log($scope.escapistaDetalle)
+
+								},function(response, status, headers,
+										   config) {
+									$scope.error.show = true;
+									$scope.error.message = "Se produjo un error obteniendo datos del escapista";
+								});
+
+
+
 						$scope.isEscapistaDetalle.show = true;
-						console.log($scope.isEscapistaDetalle.show);
 						$scope.$apply();
 					}
 
