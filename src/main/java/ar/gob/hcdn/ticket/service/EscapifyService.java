@@ -83,7 +83,7 @@ public class EscapifyService {
             return getEscapista(21L);
         }
 
-        return escapistaTransformer.transform(escapista);
+        return escapistaTransformer.transformDetallado(escapista);
     }
 
 
