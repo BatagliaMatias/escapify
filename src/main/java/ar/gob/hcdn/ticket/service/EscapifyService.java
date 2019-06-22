@@ -76,10 +76,13 @@ public class EscapifyService {
     }
 
     public EscapistaDTO crearEscapista(AddEscapistaDTO addEscapistaDTO) {
-        Escapista escapista = escapifyDAO.findEscapistaByUsuario(addEscapistaDTO.getUsuario());
-        if(escapista == null){
+        Escapista escapista;
+        try{
+            escapista = escapifyDAO.findEscapistaByUsuario(addEscapistaDTO.getUsuario());
+        } catch (Exception e){
             return getEscapista(21L);
         }
+
         return escapistaTransformer.transform(escapista);
     }
 
