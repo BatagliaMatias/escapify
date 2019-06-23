@@ -52,6 +52,7 @@ angular
 					};
 
 					$scope.guardarEdicionPreferencias = function(){
+						console.log("/services/escapista/"+ $scope.escapistaDetalle.usuario + "/preferencias");
 						$scope.edicionParametrosEscapista = false;
 					};
 
