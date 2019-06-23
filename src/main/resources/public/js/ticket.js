@@ -25,7 +25,7 @@ angular
 					$scope.isEscapistaDetalle = {
 						show : false
 					};
-
+					$scope.edicionParametrosEscapista = false;
 					$scope.busquedaSalas={};
 
 					$scope.tabSelectedIndex = 0;
