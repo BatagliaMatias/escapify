@@ -53,7 +53,30 @@ angular
 
 					$scope.guardarEdicionPreferencias = function(){
 						console.log("/services/escapista/"+ $scope.escapistaDetalle.usuario + "/preferencias");
-						$scope.edicionParametrosEscapista = false;
+
+						var preferenciasEscapistaEdicion = {
+							"dificultad" : 7,
+							"terror" : 6,
+							"aventura" : 5
+						};
+
+						$http(
+							{
+								method : 'POST',
+								url : "/services/escapista/"+ $scope.escapistaDetalle.usuario + "/preferencias",
+								data: preferenciasEscapistaEdicion,
+							})
+							.then(
+								function(response, status, headers,
+										 config) {
+									$scope.edicionParametrosEscapista = false;
+									$scope.escapistaDetalle = response.data.data;
+
+								});
+
+
+
+
 					};
 
 					$scope.salasParaEquipo =  function(idEquipo){
