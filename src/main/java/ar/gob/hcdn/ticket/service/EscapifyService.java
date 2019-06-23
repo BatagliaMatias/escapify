@@ -95,6 +95,7 @@ public class EscapifyService {
         escapista.getPreferencia().setAventura(updatePreferenciasDTO.getAventura());
         escapista.getPreferencia().setTerror(updatePreferenciasDTO.getTerror());
         escapista.getPreferencia().setDificultad(updatePreferenciasDTO.getDificultad());
+        escapifyDAO.persist(escapista);
         return escapistaTransformer.transformDetallado(escapista);
     }
 }
