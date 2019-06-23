@@ -64,21 +64,21 @@
                                                 <span class="md-body-2">Terror</span>
                                             </div>
                                             <md-slider md-discrete flex  ng-model="escapistaDetalle.preferencia.terror" min="1" max="10" ng-disabled="!edicionParametrosEscapista" step=""
-                                                   aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
+                                                   aria-label="Disabled discrete 3" ng-readonly="!edicionParametrosEscapista"></md-slider>
                                         </div>
                                         <div layout class="layout-row preferencias">
                                             <div flex="15" layout layout-align="center center">
                                                 <span class="md-body-2">Aventura</span>
                                             </div>
                                             <md-slider md-discrete flex  ng-model="escapistaDetalle.preferencia.aventura" min="1" max="10" ng-disabled="!edicionParametrosEscapista" step=""
-                                                       aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
+                                                       aria-label="Disabled discrete 3" ng-readonly="!edicionParametrosEscapista"></md-slider>
                                         </div>
                                         <div layout class="layout-row preferencias">
                                             <div flex="15" layout layout-align="center center">
                                                 <span class="md-body-2">Dificultad</span>
                                             </div>
                                             <md-slider md-discrete flex  ng-model="escapistaDetalle.preferencia.dificultad" min="1" max="10" ng-disabled="!edicionParametrosEscapista" step=""
-                                                       aria-label="Disabled discrete 3" ng-readonly="true"></md-slider>
+                                                       aria-label="Disabled discrete 3" ng-readonly="!edicionParametrosEscapista"></md-slider>
                                         </div>
                                         <md-checkbox ng-model="edicionParametrosEscapista">Editar</md-checkbox>
                                         <md-button ng-click="verEquipos()" class="md-primary">VER MIS EQUIPOS</md-button>
