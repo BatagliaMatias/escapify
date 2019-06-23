@@ -21,7 +21,13 @@ angular
 					};
 					$scope.escapistas = [];
 					$scope.escapista = {};
-					$scope.escapistaDetalle = {};
+					$scope.escapistaDetalle = {
+						preferencia : {
+							terror: 1,
+							dificultad: 1,
+							aventura: 1
+						}
+					};
 					$scope.isEscapistaDetalle = {
 						show : false
 					};
