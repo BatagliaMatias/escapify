@@ -4,10 +4,7 @@ import ar.gob.hcdn.ticket.dao.EscapifyDAO;
 import ar.gob.hcdn.ticket.domain.Equipo;
 import ar.gob.hcdn.ticket.domain.Escapista;
 import ar.gob.hcdn.ticket.domain.Sala;
-import ar.gob.hcdn.ticket.dto.AddEscapistaDTO;
-import ar.gob.hcdn.ticket.dto.BusquedaEquipoSalaDTO;
-import ar.gob.hcdn.ticket.dto.EscapistaDTO;
-import ar.gob.hcdn.ticket.dto.SalaDTO;
+import ar.gob.hcdn.ticket.dto.*;
 import ar.gob.hcdn.ticket.transformer.EscapistaTransformer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -93,4 +90,11 @@ public class EscapifyService {
     }
 
 
+    public EscapistaDTO updatePreferencias(String usuario, UpdatePreferenciasDTO updatePreferenciasDTO) {
+        Escapista escapista = escapifyDAO.findEscapistaByUsuario(usuario);
+        escapista.getPreferencia().setAventura(updatePreferenciasDTO.getAventura());
+        escapista.getPreferencia().setTerror(updatePreferenciasDTO.getTerror());
+        escapista.getPreferencia().setDificultad(updatePreferenciasDTO.getDificultad());
+        return escapistaTransformer.transformDetallado(escapista);
+    }
 }

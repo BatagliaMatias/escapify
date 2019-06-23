@@ -1,10 +1,7 @@
 package ar.gob.hcdn.ticket.controller;
 
 import ar.gob.hcdn.ticket.common.HcdnResponse;
-import ar.gob.hcdn.ticket.dto.AddEscapistaDTO;
-import ar.gob.hcdn.ticket.dto.BusquedaEquipoSalaDTO;
-import ar.gob.hcdn.ticket.dto.EscapistaDTO;
-import ar.gob.hcdn.ticket.dto.UserDTO;
+import ar.gob.hcdn.ticket.dto.*;
 import ar.gob.hcdn.ticket.service.EscapifyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -60,6 +57,14 @@ public class TicketController {
 	public ResponseEntity<HcdnResponse<EscapistaDTO>> crearEscapista(@RequestBody AddEscapistaDTO addEscapistaDTO){
 		HcdnResponse<EscapistaDTO> response = new HcdnResponse<>();
 		response.setData(escapifyService.crearEscapista(addEscapistaDTO));
+		return new ResponseEntity<>(response, HttpStatus.OK);
+
+	}
+
+	@PostMapping("/escapista/{usuario}/preferencias")
+	public ResponseEntity<HcdnResponse<EscapistaDTO>> crearEscapista(@PathVariable("usuario") String usuario,@RequestBody UpdatePreferenciasDTO updatePreferenciasDTO){
+		HcdnResponse<EscapistaDTO> response = new HcdnResponse<>();
+		response.setData(escapifyService.updatePreferencias(usuario,updatePreferenciasDTO));
 		return new ResponseEntity<>(response, HttpStatus.OK);
 
 	}
