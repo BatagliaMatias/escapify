@@ -55,9 +55,9 @@ angular
 						console.log("/services/escapista/"+ $scope.escapistaDetalle.usuario + "/preferencias");
 
 						var preferenciasEscapistaEdicion = {
-							"dificultad" : 7,
-							"terror" : 6,
-							"aventura" : 5
+							"dificultad" : $scope.escapistaDetalle.preferencia.dificultad,
+							"terror" : $scope.escapistaDetalle.preferencia.terror,
+							"aventura" : $scope.escapistaDetalle.preferencia.aventura
 						};
 
 						$http(
