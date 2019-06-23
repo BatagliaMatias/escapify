@@ -81,6 +81,8 @@
                                                        aria-label="Disabled discrete 3" ng-readonly="!edicionParametrosEscapista"></md-slider>
                                         </div>
                                         <md-checkbox ng-model="edicionParametrosEscapista">Editar</md-checkbox>
+                                        <md-button ng-show="!edicionParametrosEscapista" ng-click="iniciarEdicionPreferencias()" class="md-primary">EDITAR PREFERENCIAS</md-button>
+                                        <md-button ng-show="edicionParametrosEscapista" ng-click="guardarEdicionPreferencias()" class="md-primary">GUARDAR</md-button>
                                         <md-button ng-click="verEquipos()" class="md-primary">VER MIS EQUIPOS</md-button>
 
 

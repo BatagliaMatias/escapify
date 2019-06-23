@@ -47,6 +47,14 @@ angular
 						nombre : ""
 					};
 
+					$scope.iniciarEdicionPreferencias = function(){
+						$scope.edicionParametrosEscapista = true;
+					};
+
+					$scope.guardarEdicionPreferencias = function(){
+						$scope.edicionParametrosEscapista = false;
+					};
+
 					$scope.salasParaEquipo =  function(idEquipo){
 						console.log("/services/equipo/"+idEquipo+"/sala/buscar");
 						if(idEquipo != null){
