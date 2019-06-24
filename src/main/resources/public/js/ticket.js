@@ -166,10 +166,21 @@ angular
 					};
 
 					$scope.salaJugada = function(item){
-					    var index = $scope.busquedaSalas.salasRanking.indexOf(item);
-					    console.log(index);
-					    console.log(item.id);
-                        console.log(item);
+						console.log("/services/escapista/"+ $scope.escapistaDetalle.usuario + "/sala/" + item.id);
+						$http(
+							{
+								method : 'POST',
+								url : "/services/escapista/"+ $scope.escapistaDetalle.usuario + "/sala/" + item.id
+
+							})
+							.then(
+								function(response, status, headers,
+										 config) {
+
+									$scope.escapistaDetalle = response.data.data;
+									$scope.busquedaSalas();
+
+								});
                     };
 
 					$scope.salasParaEquipo =  function(idEquipo){

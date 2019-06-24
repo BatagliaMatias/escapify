@@ -117,4 +117,12 @@ public class EscapifyService {
         escapifyDAO.persist(escapista);
         return escapistaTransformer.transformDetallado(escapifyDAO.findEscapistaByUsuario(usuario));
     }
+
+    public EscapistaDTO jugarSala(String usuario, Long idSala) {
+        Escapista escapista = escapifyDAO.findEscapistaByUsuario(usuario);
+        Sala sala = escapifyDAO.findSalaById(idSala);
+        escapista.agregarSala(sala);
+        escapifyDAO.persist(escapista);
+        return escapistaTransformer.transformDetallado(escapifyDAO.findEscapistaByUsuario(usuario));
+    }
 }

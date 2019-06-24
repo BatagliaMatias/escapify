@@ -68,6 +68,13 @@ public class TicketController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+	@PostMapping("/escapista/{usuario}/sala/{sala}")
+	public ResponseEntity<HcdnResponse<EscapistaDTO>> jugarSala(@PathVariable("usuario") String usuario,@PathVariable("sala") Long sala){
+		HcdnResponse<EscapistaDTO> response = new HcdnResponse<>();
+		response.setData(escapifyService.jugarSala(usuario,sala));
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+
 	@PostMapping("/escapista/{usuario}/equipo/unirse")
 	public ResponseEntity<HcdnResponse<EscapistaDTO>> unirEquipo(@PathVariable("usuario") String usuario, @RequestBody AddEquipoDTO addEquipoDTO){
 		HcdnResponse<EscapistaDTO> response = new HcdnResponse<>();
