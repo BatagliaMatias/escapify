@@ -10,7 +10,8 @@ import com.opencsv.CSVReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -129,12 +130,14 @@ public class EscapifyService {
     }
 
     public String salasCsv() {
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+        InputStream is = classloader.getResourceAsStream("salas.csv");
         String respuesta = "";
         int posNombre = 0;
         int posTerror = 1;
         int posAventura = 2;
         int posDificultad = 3;
-        try (CSVReader csvReader = new CSVReader(new FileReader("salas.csv"))) {
+        try (CSVReader csvReader = new CSVReader(new InputStreamReader(is))) {
             String[] values = null;
             while ((values = csvReader.readNext()) != null) {
                 respuesta += values[posNombre] + values[posTerror] + values[posAventura] + values[posDificultad];
