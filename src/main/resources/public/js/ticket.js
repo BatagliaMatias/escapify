@@ -14,7 +14,7 @@ angular
 		})
 		.controller(
 				'CargaTickets',
-				function($scope, $http,$mdSidenav) {
+				function($scope, $http,$mdSidenav,$mdDialog) {
 
 					$scope.idEscapista = {
 						selected : "None"
@@ -53,13 +53,44 @@ angular
 						nombre : ""
 					};
 
-					$scope.crearEquipo = function(){
-						//$scope.edicionParametrosEscapista = true;
+					$scope.crearEquipo = function(ev){
+						var confirm = $mdDialog.prompt()
+							.title('Ingrese el nombre de su equipo.')
+							.textContent('Máximo 10 caracteres sin espacios')
+							.placeholder('Nombre del equipo')
+							.ariaLabel('Nombre del equipo')
+							.initialValue('')
+							.targetEvent(ev)
+							.required(true)
+							.ok('Crear equipo')
+							.cancel('Cancelar');
+
+						$mdDialog.show(confirm).then(function(result) {
+							$scope.status = 'You decided to name your dog ' + result + '.';
+						}, function() {
+							$scope.status = 'You didn\'t name your dog.';
+						});
+
 						console.log("crear equipo")
 					};
 
-					$scope.unirseEquipo = function(){
-						//$scope.edicionParametrosEscapista = true;
+					$scope.unirseEquipo = function(ev){
+						var confirm = $mdDialog.prompt()
+							.title('Ingrese el nombre de su equipo')
+							.textContent('Máximo 10 caracteres sin espacios')
+							.placeholder('Nombre del equipo')
+							.ariaLabel('Nombre del equipo')
+							.initialValue('')
+							.targetEvent(ev)
+							.required(true)
+							.ok('Unirse al equipo')
+							.cancel('Cancelar');
+
+						$mdDialog.show(confirm).then(function(result) {
+							$scope.status = 'You decided to name your dog ' + result + '.';
+						}, function() {
+							$scope.status = 'You didn\'t name your dog.';
+						});
 						console.log("unirse equipo")
 					};
 
