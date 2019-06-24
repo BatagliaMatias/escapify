@@ -199,9 +199,9 @@ angular
 											 config) {
 
 										$scope.busquedaSalas = response.data.data;
-										$scope.busquedaSalas.equipoPreferencias.dificultad = $scope.busquedaSalas.equipoPreferencias.dificultad.toFixed(2);
-										$scope.busquedaSalas.equipoPreferencias.aventura = $scope.busquedaSalas.equipoPreferencias.aventura.toFixed(2);
-										$scope.busquedaSalas.equipoPreferencias.terror = $scope.busquedaSalas.equipoPreferencias.terror.toFixed(2);
+										$scope.busquedaSalas.equipoPreferencias.dificultad = parseFloat($scope.busquedaSalas.equipoPreferencias.dificultad.toFixed(2));
+										$scope.busquedaSalas.equipoPreferencias.aventura = parseFloat($scope.busquedaSalas.equipoPreferencias.aventura.toFixed(2));
+										$scope.busquedaSalas.equipoPreferencias.terror = parseFloat($scope.busquedaSalas.equipoPreferencias.terror.toFixed(2));
 										$scope.mostrarSalas = true;
 										$scope.tabSelectedIndex = 2;
 
