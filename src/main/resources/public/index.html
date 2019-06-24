@@ -47,8 +47,9 @@
 						<md-content class="md-padding">
 
                                 <md-content  ng-show="!isEscapistaDetalle.show" >
-                                    <div class="g-signin2" data-longtitle="true" data-theme="dark" data-width="240" data-height="50" data-longtitle="true" data-onsuccess="onSignIn"></div>
-
+                                    <div layout="column" layout-align="center center">
+                                        <div class="g-signin2" data-longtitle="true" data-theme="dark" data-width="240" data-height="50" data-longtitle="true" data-onsuccess="onSignIn"></div>
+                                    </div>
                                    <!-- <h2 class="md-display-1">Elija su escapista</h2>
                                     <md-select placeholder="" ng-change="cargarDatosEscapista()" ng-model="escapista"  style="min-width: 200px;">
                                         <md-option ng-value="escapista"  ng-repeat="escapista in escapistas">{{escapista.nombre}}</md-option>
@@ -249,7 +250,7 @@
 				</md-tabs>
 			</md-content>
 		</div>
-        <a href="#" onclick="signOut();">Sign out</a>
+       <!-- <a href="#" onclick="signOut();">Sign out</a>-->
 	</div>
 
 
