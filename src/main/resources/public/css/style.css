@@ -232,8 +232,8 @@ ul li {
   width: 43%;
 }
 
-#listaEquipos md-list-item.md-2-line,#listaEquipos md-list-item.md-2-line>.md-no-style {
-  height: 350px;
+#listaEquipos {
+  height: 350px !important;
 }
 
 ul {
