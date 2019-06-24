@@ -122,6 +122,13 @@
   margin-top: 31px !important;
 }
 
+.pagina-login{
+  height: 100%;
+  height: -moz-available;          /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+}
+
 .preferencias{
   width: 97% !important;
   background: #eee;
