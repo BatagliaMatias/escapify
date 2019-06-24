@@ -178,14 +178,17 @@ angular
 										 config) {
 
 									$scope.escapistaDetalle = response.data.data;
-									$scope.busquedaSalas();
+									$scope.salasParaEquipo($scope.equipoActual);
 
 								});
                     };
 
+					$scope.equipoActual = 0;
+
 					$scope.salasParaEquipo =  function(idEquipo){
 						console.log("/services/equipo/"+idEquipo+"/sala/buscar");
 						if(idEquipo != null){
+							$scope.equipoActual = idEquipo;
 							$http(
 								{
 									method : 'GET',
