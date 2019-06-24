@@ -140,7 +140,13 @@ public class EscapifyService {
         try (CSVReader csvReader = new CSVReader(new InputStreamReader(is))) {
             String[] values = null;
             while ((values = csvReader.readNext()) != null) {
-                respuesta += values[posNombre] + values[posTerror] + values[posAventura] + values[posDificultad];
+                Sala sala = new Sala();
+                sala.setNombre(values[posNombre]);
+                sala.getPreferencia().setAventura(Integer.parseInt(values[posAventura]));
+                sala.getPreferencia().setTerror(Integer.parseInt(values[posTerror]));
+                sala.getPreferencia().setDificultad(Integer.parseInt(values[posDificultad]));
+                escapifyDAO.persist(sala);
+                respuesta += values[posNombre] + values[posTerror] + values[posAventura] + values[posDificultad] + "\n";
             }
         }catch (Exception e){
             e.printStackTrace();
