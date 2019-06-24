@@ -221,6 +221,21 @@ ul li {
   margin-left: 0;
 }
 
+#listaEquipos ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+  margin-left: 0;
+  float: left;
+  width: 43%;
+}
+
+#listaEquipos md-list-item.md-2-line,#listaEquipos md-list-item.md-2-line>.md-no-style {
+  height: 350px;
+}
+
 ul {
   padding-left: 0;
 }

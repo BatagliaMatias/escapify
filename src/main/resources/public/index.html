@@ -134,7 +134,7 @@
                                 <md-button ng-click="unirseEquipo($event)" class="acciones-equipo md-primary">UNIRSE EQUIPO</md-button>
                                 <md-content>
                                     <md-list flex>
-                                        <md-list-item class="md-2-line" ng-repeat="equipoEscapista in escapistaDetalle.equipos">
+                                        <md-list-item id="listaEquipos" class="md-2-line" ng-repeat="equipoEscapista in escapistaDetalle.equipos">
                                             <div class="md-list-item-text">
                                                 <h3 class="titSalas"> {{ equipoEscapista.nombre }} </h3>
                                                 <h3 class="titCaracteristicas datos-equipo"> Codigo: {{equipoEscapista.codigo}} </h3>
