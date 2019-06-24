@@ -168,7 +168,8 @@ angular
 					$scope.salaJugada = function(item){
 					    var index = $scope.busquedaSalas.salasRanking.indexOf(item);
 					    console.log(index);
-					    console.log(item.id)
+					    console.log(item.id);
+                        console.log(item);
                     };
 
 					$scope.salasParaEquipo =  function(idEquipo){
