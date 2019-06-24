@@ -199,6 +199,7 @@ angular
 											 config) {
 
 										$scope.busquedaSalas = response.data.data;
+										console.log(response.data.data);
 										$scope.mostrarSalas = true;
 										$scope.tabSelectedIndex = 2;
 
