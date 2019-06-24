@@ -56,7 +56,7 @@ angular
 					$scope.crearEquipo = function(ev){
 						var confirm = $mdDialog.prompt()
 							.title('Ingrese el nombre de su equipo.')
-							.textContent('Máximo 10 caracteres sin espacios')
+							.textContent('M&aacute;ximo 10 caracteres sin espacios')
 							.placeholder('Nombre del equipo')
 							.ariaLabel('Nombre del equipo')
 							.initialValue('')
@@ -66,9 +66,9 @@ angular
 							.cancel('Cancelar');
 
 						$mdDialog.show(confirm).then(function(result) {
-							$scope.status = 'You decided to name your dog ' + result + '.';
+							console.log('You decided to name your dog ' + result + '.');
 						}, function() {
-							$scope.status = 'You didn\'t name your dog.';
+							console.log('You didn\'t name your dog.');
 						});
 
 						console.log("crear equipo")
@@ -77,19 +77,40 @@ angular
 					$scope.unirseEquipo = function(ev){
 						var confirm = $mdDialog.prompt()
 							.title('Ingrese el nombre de su equipo')
-							.textContent('Máximo 10 caracteres sin espacios')
+							.textContent('M&aacute;ximo 10 caracteres sin espacios')
 							.placeholder('Nombre del equipo')
 							.ariaLabel('Nombre del equipo')
 							.initialValue('')
 							.targetEvent(ev)
 							.required(true)
-							.ok('Unirse al equipo')
+							.ok('Siguiente')
 							.cancel('Cancelar');
 
 						$mdDialog.show(confirm).then(function(result) {
-							$scope.status = 'You decided to name your dog ' + result + '.';
+							console.log('You decided to name your dog ' + result + '.');
+
+
+							var confirm = $mdDialog.prompt()
+								.title('Ingrese el c&oacute;digo secreto de su equipo')
+								.textContent('M&aacute;ximo 10 caracteres sin espacios')
+								.placeholder('C&oacute;digo del equipo')
+								.ariaLabel('Codigo del equipo')
+								.initialValue('')
+								.targetEvent(ev)
+								.required(true)
+								.ok('Unirse al equipo')
+								.cancel('Cancelar');
+
+							$mdDialog.show(confirm).then(function(result) {
+								console.log('FINAL You decided to name your dog ' + result + '.');
+							}, function() {
+								console.log('FINAL You didn\'t name your dog.');
+							});
+
+
+
 						}, function() {
-							$scope.status = 'You didn\'t name your dog.';
+							console.log('You didn\'t name your dog.');
 						});
 						console.log("unirse equipo")
 					};
