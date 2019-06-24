@@ -165,6 +165,12 @@ angular
 
 					};
 
+					$scope.salaJugada = function(item){
+					    var index = $scope.busquedaSalas.salasRanking.indexOf(item);
+					    console.log(index);
+					    console.log(item.id)
+                    };
+
 					$scope.salasParaEquipo =  function(idEquipo){
 						console.log("/services/equipo/"+idEquipo+"/sala/buscar");
 						if(idEquipo != null){
