@@ -46,6 +46,13 @@ public class TicketController {
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
+	@GetMapping("salasCsv")
+	public ResponseEntity<HcdnResponse<String>> salasCsv(){
+		HcdnResponse<String> response = new HcdnResponse<>();
+		response.setData(escapifyService.salasCsv());
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+
 	@GetMapping("escapistas")
 	public ResponseEntity<HcdnResponse<List<EscapistaDTO>>> getEscapistas(){
 		HcdnResponse<List<EscapistaDTO>> response = new HcdnResponse<>();

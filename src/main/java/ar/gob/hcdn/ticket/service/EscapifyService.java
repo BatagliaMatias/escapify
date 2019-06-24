@@ -6,9 +6,11 @@ import ar.gob.hcdn.ticket.domain.Escapista;
 import ar.gob.hcdn.ticket.domain.Sala;
 import ar.gob.hcdn.ticket.dto.*;
 import ar.gob.hcdn.ticket.transformer.EscapistaTransformer;
+import com.opencsv.CSVReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -124,5 +126,22 @@ public class EscapifyService {
         escapista.agregarSala(sala);
         escapifyDAO.persist(escapista);
         return escapistaTransformer.transformDetallado(escapifyDAO.findEscapistaByUsuario(usuario));
+    }
+
+    public String salasCsv() {
+        String respuesta = "";
+        int posNombre = 0;
+        int posTerror = 1;
+        int posAventura = 2;
+        int posDificultad = 3;
+        try (CSVReader csvReader = new CSVReader(new FileReader("salas.csv"))) {
+            String[] values = null;
+            while ((values = csvReader.readNext()) != null) {
+                respuesta += values[posNombre] + values[posTerror] + values[posAventura] + values[posDificultad];
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return respuesta;
     }
 }
