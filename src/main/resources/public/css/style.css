@@ -165,6 +165,10 @@ md-slider.md-default-theme[disabled][readonly] .md-sign:after, md-slider[disable
   margin-bottom: 20px;
 }
 
+.datos-equipo{
+  margin-top: 10px !important;
+}
+
 .acciones-equipo{
   float: none !important;
 }
