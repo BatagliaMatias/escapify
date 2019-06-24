@@ -42,7 +42,7 @@ public class EscapistaTransformer {
                 equipoDTO.getIntegrantes().add(escapistaEquipo.getNombre());
             }
             if(equipo.getEscapistas().isEmpty()){
-                equipoDTO.getIntegrantes().add(escapista.getNombre());
+               // equipoDTO.getIntegrantes().add(escapista.getNombre());
             }
             escapistaDTO.getEquipos().add(equipoDTO);
         }

@@ -104,6 +104,7 @@ public class EscapifyService {
         Equipo equipo = new Equipo();
         equipo.setNombre(addEquipoDTO.getNombre());
         escapista.agregarEquipo(equipo);
+        equipo.getEscapistas().add(escapista);
         escapifyDAO.persist(escapista);
         return escapistaTransformer.transformDetallado(escapifyDAO.findEscapistaByUsuario(usuario));
     }
