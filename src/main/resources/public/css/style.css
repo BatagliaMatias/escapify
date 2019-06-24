@@ -165,6 +165,9 @@ md-slider.md-default-theme[disabled][readonly] .md-sign:after, md-slider[disable
   margin-bottom: 20px;
 }
 
+.acciones-equipo{
+  float: none !important;
+}
 .md-button.md-default-theme.md-primary, .md-button.md-primary:hover {
   background: rgb(0,0,0);
 }
