@@ -169,6 +169,10 @@ md-slider.md-default-theme[disabled][readonly] .md-sign:after, md-slider[disable
   background: rgb(0,0,0);
 }
 
+.md-button.md-focused:focus {
+  background: none !important;
+}
+
 md-list-item {
   width: 38%;
   float: left;
