@@ -123,8 +123,8 @@
 }
 
 span[id^=not_signed_]:before {
-  content: 'Ingresar con Google';
-  padding-right:20px;
+  /**content: 'Ingresar con Google';
+  padding-right:20px;*/
 }
 
 .pagina-login{
