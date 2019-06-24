@@ -56,7 +56,7 @@ angular
 					$scope.crearEquipo = function(ev){
 						var confirm = $mdDialog.prompt()
 							.title('Ingrese el nombre de su equipo.')
-							.textContent('M&aacute;ximo 10 caracteres sin espacios')
+							.textContent('Maximo 10 caracteres sin espacios')
 							.placeholder('Nombre del equipo')
 							.ariaLabel('Nombre del equipo')
 							.initialValue('')
@@ -77,7 +77,7 @@ angular
 					$scope.unirseEquipo = function(ev){
 						var confirm = $mdDialog.prompt()
 							.title('Ingrese el nombre de su equipo')
-							.textContent('M&aacute;ximo 10 caracteres sin espacios')
+							.textContent('Maximo 10 caracteres sin espacios')
 							.placeholder('Nombre del equipo')
 							.ariaLabel('Nombre del equipo')
 							.initialValue('')
@@ -92,8 +92,8 @@ angular
 
 							var confirm = $mdDialog.prompt()
 								.title('Ingrese el c&oacute;digo secreto de su equipo')
-								.textContent('M&aacute;ximo 10 caracteres sin espacios')
-								.placeholder('C&oacute;digo del equipo')
+								.textContent('Maximo 10 caracteres sin espacios')
+								.placeholder('Codigo del equipo')
 								.ariaLabel('Codigo del equipo')
 								.initialValue('')
 								.targetEvent(ev)
@@ -101,8 +101,8 @@ angular
 								.ok('Unirse al equipo')
 								.cancel('Cancelar');
 
-							$mdDialog.show(confirm).then(function(result) {
-								console.log('FINAL You decided to name your dog ' + result + '.');
+							$mdDialog.show(confirm).then(function(result2) {
+								console.log('FINAL You decided to name your dog ' + result + "-"+ result2 + '.');
 							}, function() {
 								console.log('FINAL You didn\'t name your dog.');
 							});
