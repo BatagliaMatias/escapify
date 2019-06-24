@@ -66,12 +66,29 @@ angular
 							.cancel('Cancelar');
 
 						$mdDialog.show(confirm).then(function(result) {
-							console.log('You decided to name your dog ' + result + '.');
+							console.log("/services/escapista/" + $scope.escapistaDetalle.usuario + "/equipo" );
+							var crearEquipoData = {
+								nombre : result
+							};
+							$http(
+								{
+									method : 'POST',
+									url : "/services/escapista/"+ $scope.escapistaDetalle.usuario + "/equipo",
+									data: crearEquipoData,
+								})
+								.then(
+									function(response, status, headers,
+											 config) {
+
+										$scope.escapistaDetalle = response.data.data;
+
+									});
+
 						}, function() {
-							console.log('You didn\'t name your dog.');
+
 						});
 
-						console.log("crear equipo")
+
 					};
 
 					$scope.unirseEquipo = function(ev){
