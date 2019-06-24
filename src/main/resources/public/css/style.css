@@ -170,7 +170,7 @@ md-slider.md-default-theme[disabled][readonly] .md-sign:after, md-slider[disable
 }
 
 .md-button.md-focused:focus {
-  background: none !important;
+  background: rgb(255,152,0) !important;
 }
 
 md-list-item {
