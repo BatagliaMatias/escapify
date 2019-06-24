@@ -53,6 +53,16 @@ angular
 						nombre : ""
 					};
 
+					$scope.crearEquipo = function(){
+						//$scope.edicionParametrosEscapista = true;
+						console.log("crear equipo")
+					};
+
+					$scope.unirseEquipo = function(){
+						//$scope.edicionParametrosEscapista = true;
+						console.log("unirse equipo")
+					};
+
 					$scope.iniciarEdicionPreferencias = function(){
 						$scope.edicionParametrosEscapista = true;
 					};
