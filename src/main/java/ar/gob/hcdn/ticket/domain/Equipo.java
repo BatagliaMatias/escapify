@@ -64,6 +64,6 @@ public class Equipo {
     }
 
     public String getCodigo(){
-        return String.format("%010d",pk);
+        return String.format("%05d",pk);
     }
 }

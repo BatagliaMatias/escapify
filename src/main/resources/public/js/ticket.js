@@ -92,24 +92,8 @@ angular
 					};
 
 					$scope.unirseEquipo = function(ev){
-						var confirm = $mdDialog.prompt()
-							.title('Ingrese el nombre de su equipo')
-							.textContent('Maximo 10 caracteres sin espacios')
-							.placeholder('Nombre del equipo')
-							.ariaLabel('Nombre del equipo')
-							.initialValue('')
-							.targetEvent(ev)
-							.required(true)
-							.ok('Siguiente')
-							.cancel('Cancelar');
-
-						$mdDialog.show(confirm).then(function(result) {
-							console.log('You decided to name your dog ' + result + '.');
-
-
 							var confirm = $mdDialog.prompt()
-								.title('Ingrese el c&oacute;digo secreto de su equipo')
-								.textContent('Maximo 10 caracteres sin espacios')
+								.title('Ingrese el codigo de su equipo')
 								.placeholder('Codigo del equipo')
 								.ariaLabel('Codigo del equipo')
 								.initialValue('')
@@ -118,17 +102,34 @@ angular
 								.ok('Unirse al equipo')
 								.cancel('Cancelar');
 
-							$mdDialog.show(confirm).then(function(result2) {
-								console.log('FINAL You decided to name your dog ' + result + "-"+ result2 + '.');
+							$mdDialog.show(confirm).then(function(result) {
+							    var unirEquipoData = {
+							        codigo : result
+                                };
+							    console.log("/services/escapista/"+ $scope.escapistaDetalle.usuario + "/equipo/unirse");
+                                $http(
+                                    {
+                                        method : 'POST',
+                                        url : "/services/escapista/"+ $scope.escapistaDetalle.usuario + "/equipo/unirse",
+                                        data: unirEquipoData,
+                                    })
+                                    .then(
+                                        function(response, status, headers,
+                                                 config) {
+
+                                            $scope.escapistaDetalle = response.data.data;
+
+                                        },function(response, status, headers,
+                                                   config) {
+                                           alert("Codigo incorrecto");
+                                        });
 							}, function() {
-								console.log('FINAL You didn\'t name your dog.');
+
 							});
 
 
 
-						}, function() {
-							console.log('You didn\'t name your dog.');
-						});
+
 						console.log("unirse equipo")
 					};
 
