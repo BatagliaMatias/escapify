@@ -62,4 +62,8 @@ public class Equipo {
         }
         return preferencias;
     }
+
+    public String getCodigo(){
+        return String.format("%010d",pk);
+    }
 }

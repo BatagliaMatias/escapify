@@ -6,6 +6,7 @@ public class EquipoDTO {
     private String nombre;
     private Long id;
     private List<String> integrantes;
+    private String codigo;
 
     public String getNombre() {
         return nombre;
@@ -29,5 +30,13 @@ public class EquipoDTO {
 
     public void setIntegrantes(List<String> integrantes) {
         this.integrantes = integrantes;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getCodigo() {
+        return codigo;
     }
 }

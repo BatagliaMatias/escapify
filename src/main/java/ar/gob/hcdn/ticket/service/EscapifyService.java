@@ -98,4 +98,13 @@ public class EscapifyService {
         escapifyDAO.persist(escapista);
         return escapistaTransformer.transformDetallado(escapista);
     }
+
+    public EscapistaDTO crearEquipo(String usuario, AddEquipoDTO addEquipoDTO) {
+        Escapista escapista = escapifyDAO.findEscapistaByUsuario(usuario);
+        Equipo equipo = new Equipo();
+        equipo.setNombre(addEquipoDTO.getNombre());
+        escapista.agregarEquipo(equipo);
+        escapifyDAO.persist(escapista);
+        return escapistaTransformer.transformDetallado(escapifyDAO.findEscapistaByUsuario(usuario));
+    }
 }

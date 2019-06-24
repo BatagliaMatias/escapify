@@ -37,6 +37,7 @@ public class EscapistaTransformer {
             equipoDTO.setId(equipo.getPk());
             equipoDTO.setNombre(equipo.getNombre());
             equipoDTO.setIntegrantes(new ArrayList<>());
+            equipoDTO.setCodigo(equipo.getCodigo());
             for(Escapista escapistaEquipo : equipo.getEscapistas()){
                 equipoDTO.getIntegrantes().add(escapistaEquipo.getNombre());
             }
